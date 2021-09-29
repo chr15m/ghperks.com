@@ -18,5 +18,17 @@
 
 (defn setup-routes [app]
   (.use app (.initialize passport))
-  (.use app (.session passport)))
+  (.use app (.session passport))
+  (.get app "/auth/github"
+        (j/call passport :authenticate "github" (clj->js {:scope ["user:email"]})))
+  (.get app "/auth/logout"
+        (fn [req res]
+          (j/call req :logout)
+          (j/call-in req [:session :destroy])
+          (.redirect res "/")))
+  (.get app "/auth/github/callback"
+        (j/call passport :authenticate "github" (clj->js {:failureRedirect "/auth/error"}))
+        (fn [req res] (.redirect res "/")))
+  (.get app "/auth/error"
+        (fn [req res] (.send res "Authentication error."))))
 
