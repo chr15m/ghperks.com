@@ -1,9 +1,12 @@
 (ns ghperks.auth
   (:require
+    [promesa.core :as p]
     [applied-science.js-interop :as j]
     ["passport" :as passport]
     ["passport-github2" :as ghpass]
-    [sitefox.util :refer [env-required]]))
+    [sitefox.util :refer [env-required env]]
+    [sitefox.db :refer [kv]]
+    [sitefox.mail :refer [transport send-mail]]))
 
 (defn setup []
   (.use passport
@@ -28,7 +31,21 @@
           (.redirect res "/")))
   (.get app "/auth/github/callback"
         (j/call passport :authenticate "github" (clj->js {:failureRedirect "/auth/error"}))
-        (fn [req res] (.redirect res "/")))
+        (fn [req res]
+          (p/let [id (j/get-in req [:user :id])
+                  username (j/get-in req [:user :username])
+                  sign-ups-db (-> (kv "pre-sign-up")
+                                  (.set (str "gh-" id)
+                                        (clj->js {:timestamp (js/Date.)
+                                                  :user (aget req "user")})))
+                  email-address (env "EMAIL_NOTIFY_ADDRESS")
+                  mail (transport)
+                  sent (when email-address
+                         (send-mail mail
+                                    email-address email-address
+                                    "GH Perks signup" "" (str "New signup: @" username)))]
+            (js/console.log sent)
+            (.redirect res "/hello"))))
   (.get app "/auth/error"
         (fn [req res] (.send res "Authentication error."))))
 
