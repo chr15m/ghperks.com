@@ -27,37 +27,38 @@
     template))
 
 (defn logged-in-view [req]
-  [:section.ui-section-hero
-   [:div.ui-layout-container
-    (if (aget req "user")
-      [:div
-       [:p.ui-text-intro "Hello @" (j/get-in req [:user :username]) "!"]
-       (let [email (j/get-in req [:user :emails 0 :value])]
-         (if email
-           [:div
-            [:p "Thank you for signing up for the GH Perks beta."]
-            [:p "I'll send you an email at " [:strong email] " when I launch."]
-            [:p "See you soon."]
-            [:br]
-            [:p "P.S. Sponsor me to support development & lock in your place at launch:"]
-            [:div {:class "ui-component-cta ui-layout-flex"}
-             [:a {:href (str "https://github.com/sponsors/" (env "GHPERKS_OWNER") "/sponsorships?sponsor=" (env "GHPERKS_OWNER") "&tier_id=" (env "GHPERKS_TIER"))
-                  :target "_BLANK"
-                  :class "ui-component-button ui-component-button-small ui-component-button-primary"}
-              "Sponsor me on GitHub"]]]
-           [:div
-            [:p "You don't have an email address configured with GitHub."]
-            [:p "You'll have to check back in a couple of weeks."]
-            [:p "Or follow " [:a {:href "https://twitter.com/mccrmx"} "@mccrmx"] " to find out about the release."]
-            [:br]
-            [:p "See you soon."]]))]
-      [:div
-       [:p.ui-text-intro
-        "To be notified of the launch please sign in."]
-       [:div {:class "ui-component-cta ui-layout-flex"}
-        [:a {:href "/auth/github"
-             :class "ui-component-button ui-component-button-small ui-component-button-primary"}
-         "Sign in with GitHub"]]])]])
+  (let [user (aget req "user")]
+    [:section.ui-section-hero
+     [:div.ui-layout-container
+      (if user
+        [:div
+         [:p.ui-text-intro "Hello @" (j/get-in req [:user :username]) "!"]
+         (let [email (auth/get-primary-email user)]
+           (if email
+             [:div
+              [:p "Thank you for signing up for the GH Perks beta."]
+              [:p "I'll send you an email at " [:strong email] " when I launch."]
+              [:p "See you soon."]
+              [:br]
+              [:p "P.S. Sponsor me to support development & lock in your place at launch:"]
+              [:div {:class "ui-component-cta ui-layout-flex"}
+               [:a {:href (str "https://github.com/sponsors/" (env "GHPERKS_OWNER") "/sponsorships?sponsor=" (env "GHPERKS_OWNER") "&tier_id=" (env "GHPERKS_TIER"))
+                    :target "_BLANK"
+                    :class "ui-component-button ui-component-button-small ui-component-button-primary"}
+                "Sponsor me on GitHub"]]]
+             [:div
+              [:p "You don't have an email address configured with GitHub."]
+              [:p "You'll have to check back in a couple of weeks."]
+              [:p "Or follow " [:a {:href "https://twitter.com/mccrmx"} "@mccrmx"] " to find out about the release."]
+              [:br]
+              [:p "See you soon."]]))]
+        [:div
+         [:p.ui-text-intro
+          "To be notified of the launch please sign in."]
+         [:div {:class "ui-component-cta ui-layout-flex"}
+          [:a {:href "/auth/github"
+               :class "ui-component-button ui-component-button-small ui-component-button-primary"}
+           "Sign in with GitHub"]]])]]))
 
 (defn home-page [req res]
   (let [template (html-parser/parse index-html)
