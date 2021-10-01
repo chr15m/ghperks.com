@@ -32,14 +32,20 @@
          (if email
            [:div
             [:p "Thank you for signing up for the GH Perks beta."]
-            [:p "I'll send you an email at " [:strong email] " when I launch."]]
+            [:p "I'll send you an email at " [:strong email] " when I launch."]
+            [:p "See you soon."]
+            [:br]
+            [:p "P.S. Sponsor me to support development & lock in your place at launch:"]
+            [:div {:class "ui-component-cta ui-layout-flex"}
+             [:a {:href "https://github.com/sponsors/chr15m/sponsorships?sponsor=chr15m&tier_id=96946"
+                  :class "ui-component-button ui-component-button-small ui-component-button-primary"}
+              "Sponsor me on GitHub"]]]
            [:div
             [:p "You don't have an email address configured with GitHub."]
             [:p "You'll have to check back in a couple of weeks."]
-            [:p "Or follow " [:a {:href "https://twitter.com/mccrmx"} "@mccrmx"] " to find out about the release."]]))
-       [:div
-        [:br]
-        [:p "See you soon."]]]
+            [:p "Or follow " [:a {:href "https://twitter.com/mccrmx"} "@mccrmx"] " to find out about the release."]
+            [:br]
+            [:p "See you soon."]]))]
       [:div
        [:p.ui-text-intro
         "To be notified of the launch please sign in."]
