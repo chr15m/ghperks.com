@@ -5,7 +5,9 @@
     [reagent.dom.server :refer [render-to-static-markup]]
     [shadow.resource :as rc]
     [sitefox.web :as web]
-    [sitefox.util :refer [env reloader bind-console-log-to-file]]
+    [sitefox.util :refer [env]]
+    [sitefox.reloader :refer [reloader]]
+    [sitefox.logging :refer [bind-console-log-to-file]]
     ["node-html-parser" :as html-parser]
     [ghperks.auth :as auth]))
 
