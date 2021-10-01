@@ -39,7 +39,8 @@
             [:br]
             [:p "P.S. Sponsor me to support development & lock in your place at launch:"]
             [:div {:class "ui-component-cta ui-layout-flex"}
-             [:a {:href "https://github.com/sponsors/chr15m/sponsorships?sponsor=chr15m&tier_id=96946"
+             [:a {:href (str "https://github.com/sponsors/" (env "GHPERKS_OWNER") "/sponsorships?sponsor=" (env "GHPERKS_OWNER") "&tier_id=" (env "GHPERKS_TIER"))
+                  :target "_BLANK"
                   :class "ui-component-button ui-component-button-small ui-component-button-primary"}
               "Sponsor me on GitHub"]]]
            [:div
