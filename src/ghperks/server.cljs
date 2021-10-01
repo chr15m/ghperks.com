@@ -40,7 +40,7 @@
               [:p "I'll send you an email at " [:strong email] " when I launch."]
               [:p "See you soon."]
               [:br]
-              [:p "P.S. Sponsor me to support development & lock in your place at launch:"]
+              [:p "P.S. You can sponsor me if you want to support development."]
               [:div {:class "ui-component-cta ui-layout-flex"}
                [:a {:href (str "https://github.com/sponsors/" (env "GHPERKS_OWNER") "/sponsorships?sponsor=" (env "GHPERKS_OWNER") "&tier_id=" (env "GHPERKS_TIER"))
                     :target "_BLANK"
