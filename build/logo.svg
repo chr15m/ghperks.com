@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="31.497393"
-     inkscape:cy="252.95108"
+     inkscape:zoom="0.35"
+     inkscape:cx="-749.35372"
+     inkscape:cy="293.57274"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,7 +60,11 @@
      id="layer1"
      transform="translate(0,-540.36216)">
     <g
-       id="g4144">
+       id="g4144"
+       transform="translate(0.03522455,0.02700548)"
+       inkscape:export-filename="logo-padded.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="sccsscssssscs"
          style="fill:#353535;fill-opacity:1;stroke:#ffffff;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -74,5 +78,15 @@
          style="fill:#353535;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          sodipodi:nodetypes="sccsscssssscs" />
     </g>
+    <rect
+       style="opacity:0.27099998;fill:none;fill-opacity:1;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4136"
+       width="1100"
+       height="1100"
+       x="-294"
+       y="246.36217"
+       inkscape:export-filename="logo-padded.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
