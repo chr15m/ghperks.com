@@ -12,7 +12,10 @@
   (.use passport
         (ghpass/Strategy. #js {:clientID (env-required "GHPERKS_GH_CLIENT_ID")
                                :clientSecret (env-required "GHPERKS_GH_CLIENT_SECRET")
-                               :callbackURL "http://localhost:8000/auth/github/callback"}
+                               :callbackURL (str (if (env "NGINX_SERVER_NAME")
+                                                   (str "https://" (env "NGINX_SERVER_NAME"))
+                                                   "http://localhost:8000")
+                                                 "/auth/github/callback")}
                           (fn [accessToken refreshToken profile done]
                             (done nil profile))))
   (j/call passport :serializeUser (fn [user done] (done nil user)))
