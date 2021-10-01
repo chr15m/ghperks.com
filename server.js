@@ -7223,7 +7223,7 @@ $JSCompiler_prototypeAlias$$.$cljs$core$IFn$_invoke$arity$2$ = function($k$jscom
 };
 var $cljs$core$PersistentHashMap$EMPTY$$ = new $cljs$core$PersistentHashMap$$(null, 0, null, !1, null, $cljs$core$empty_unordered_hash$$);
 function $cljs$core$PersistentHashMap$fromArrays$$() {
-  for (var $ks$jscomp$14$$ = [$cljs$cst$keyword$ns$$, $cljs$cst$keyword$name$$, $cljs$cst$keyword$file$$, $cljs$cst$keyword$end_DASH_column$$, $cljs$cst$keyword$column$$, $cljs$cst$keyword$line$$, $cljs$cst$keyword$end_DASH_line$$, $cljs$cst$keyword$arglists$$, $cljs$cst$keyword$doc$$, $cljs$cst$keyword$test$$], $vs$$ = [$cljs$cst$symbol$ghperks_DOT_server$$, $cljs$cst$symbol$setup_DASH_routes$$, "ghperks/server.cljs", 19, 1, 84, 84, $cljs$core$list$$(new $cljs$core$PersistentVector$$(null, 2, 5, 
+  for (var $ks$jscomp$14$$ = [$cljs$cst$keyword$ns$$, $cljs$cst$keyword$name$$, $cljs$cst$keyword$file$$, $cljs$cst$keyword$end_DASH_column$$, $cljs$cst$keyword$column$$, $cljs$cst$keyword$line$$, $cljs$cst$keyword$end_DASH_line$$, $cljs$cst$keyword$arglists$$, $cljs$cst$keyword$doc$$, $cljs$cst$keyword$test$$], $vs$$ = [$cljs$cst$symbol$ghperks_DOT_server$$, $cljs$cst$symbol$setup_DASH_routes$$, "ghperks/server.cljs", 19, 1, 79, 79, $cljs$core$list$$(new $cljs$core$PersistentVector$$(null, 2, 5, 
   $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$symbol$app$$, $cljs$cst$symbol$passport$$], null)), null, $cljs$core$truth_$$($ghperks$server$setup_routes$$) ? $ghperks$server$setup_routes$$.$cljs$lang$test$ : null], $len$jscomp$45$$ = $ks$jscomp$14$$.length, $i$jscomp$289$$ = 0, $G__36518_out$jscomp$6$$ = $cljs$core$_as_transient$$($cljs$core$PersistentHashMap$EMPTY$$);;) {
     if ($i$jscomp$289$$ < $len$jscomp$45$$) {
       var $G__36517$$ = $i$jscomp$289$$ + 1;
@@ -9993,7 +9993,7 @@ var $shadow$js$shim$module$0chokidar$$ = require("chokidar");
 var $shadow$js$shim$module$0rotating_file_stream$$ = require("rotating-file-stream");
 function $sitefox$util$flush_bound_console$$($cb$jscomp$1$$) {
   var $error_log$jscomp$1$$ = console._logstream;
-  return $cljs$core$truth_$$($error_log$jscomp$1$$) ? ($error_log$jscomp$1$$.on("finish", $cb$jscomp$1$$), console.log = function() {
+  return $cljs$core$truth_$$($error_log$jscomp$1$$) ? ($error_log$jscomp$1$$.on.call($error_log$jscomp$1$$, "finish", $cb$jscomp$1$$), console.log = function() {
     return null;
   }, console.error = function() {
     return null;
@@ -10007,19 +10007,19 @@ function $sitefox$util$bail$cljs$0core$0IFn$0_invoke$0arity$0variadic$$($msgs$$)
   });
 }
 function $sitefox$util$env$$($var_args$jscomp$388$$) {
-  for (var $args__4824__auto__$jscomp$37$$ = [], $len__4818__auto___7366$$ = arguments.length, $i__4819__auto___7368$$ = 0;;) {
-    if ($i__4819__auto___7368$$ < $len__4818__auto___7366$$) {
-      $args__4824__auto__$jscomp$37$$.push(arguments[$i__4819__auto___7368$$]), $i__4819__auto___7368$$ += 1;
+  for (var $args__4824__auto__$jscomp$37$$ = [], $len__4818__auto___7385$$ = arguments.length, $i__4819__auto___7386$$ = 0;;) {
+    if ($i__4819__auto___7386$$ < $len__4818__auto___7385$$) {
+      $args__4824__auto__$jscomp$37$$.push(arguments[$i__4819__auto___7386$$]), $i__4819__auto___7386$$ += 1;
     } else {
       break;
     }
   }
   return $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$(arguments[0], 1 < $args__4824__auto__$jscomp$37$$.length ? new $cljs$core$IndexedSeq$$($args__4824__auto__$jscomp$37$$.slice(1), 0, null) : null);
 }
-function $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$($k$jscomp$356_or__4212__auto__$jscomp$60$$, $default$$jscomp$1_p__7145$$) {
-  $default$$jscomp$1_p__7145$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($default$$jscomp$1_p__7145$$, 0, null);
+function $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$($k$jscomp$356_or__4212__auto__$jscomp$60$$, $default$$jscomp$1_p__7166$$) {
+  $default$$jscomp$1_p__7166$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($default$$jscomp$1_p__7166$$, 0, null);
   $k$jscomp$356_or__4212__auto__$jscomp$60$$ = process.env[$k$jscomp$356_or__4212__auto__$jscomp$60$$];
-  return $cljs$core$truth_$$($k$jscomp$356_or__4212__auto__$jscomp$60$$) ? $k$jscomp$356_or__4212__auto__$jscomp$60$$ : $default$$jscomp$1_p__7145$$;
+  return $cljs$core$truth_$$($k$jscomp$356_or__4212__auto__$jscomp$60$$) ? $k$jscomp$356_or__4212__auto__$jscomp$60$$ : $default$$jscomp$1_p__7166$$;
 }
 function $sitefox$util$env_required$$($k$jscomp$357$$) {
   var $or__4212__auto__$jscomp$61$$ = $sitefox$util$env$$($k$jscomp$357$$);
@@ -10709,469 +10709,469 @@ function $cljs$core$async$put_BANG_$cljs$0core$0IFn$0_invoke$0arity$02$$($port$j
 ;function $sitefox$web$create_store$$($kv$$) {
   var $e$jscomp$256$$ = new $shadow$js$shim$module$0express_session$$.Store;
   $e$jscomp$256$$.destroy = function($sid$$, $callback$jscomp$61$$) {
-    var $c__8536__auto__$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
+    var $c__8538__auto__$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
     $cljs$core$async$impl$dispatch$run$$(function() {
-      var $f__8537__auto__$$ = function() {
-        function $switch__8511__auto__$$($state_8654$$) {
-          var $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $state_8654$$[1];
-          if (7 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            return $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $state_8654$$[7], $state_8654$$[2] = $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$, $state_8654$$[1] = 8, $cljs$cst$keyword$recur$$;
+      var $f__8539__auto__$$ = function() {
+        function $switch__8513__auto__$$($state_8656$$) {
+          var $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $state_8656$$[1];
+          if (7 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            return $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $state_8656$$[7], $state_8656$$[2] = $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$, $state_8656$$[1] = 8, $cljs$cst$keyword$recur$$;
           }
-          if (1 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            return $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $kv$$["delete"].call($kv$$, $sid$$), $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $cljs$core$async$interop$p__GT_c$$($inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8654$$, $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$);
+          if (1 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            return $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $kv$$["delete"].call($kv$$, $sid$$), $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $cljs$core$async$interop$p__GT_c$$($inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8656$$, $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$);
           }
-          if (4 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            return $state_8654$$[2] = $state_8654$$[8], $state_8654$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (4 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            return $state_8656$$[2] = $state_8656$$[8], $state_8656$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (6 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            throw $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $state_8654$$[7], $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$;
+          if (6 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            throw $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $state_8656$$[7], $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$;
           }
-          if (3 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            return $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $state_8654$$[7], $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$)), $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$, 
-            $cljs$cst$keyword$promise_DASH_error$$), $state_8654$$[2] = $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$, $state_8654$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (3 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            return $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $state_8656$$[7], $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$)), $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$, 
+            $cljs$cst$keyword$promise_DASH_error$$), $state_8656$$[2] = $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$, $state_8656$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (2 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$) {
-            $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $state_8654$$[2];
-            var $inst_8635__$1$$ = $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ instanceof $cljs$core$ExceptionInfo$$;
-            $state_8654$$[7] = $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$;
-            $state_8654$$[8] = $inst_8635__$1$$;
-            $state_8654$$[1] = $cljs$core$truth_$$($inst_8635__$1$$) ? 3 : 4;
+          if (2 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$) {
+            $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $state_8656$$[2];
+            var $inst_8637__$1$$ = $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ instanceof $cljs$core$ExceptionInfo$$;
+            $state_8656$$[7] = $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$;
+            $state_8656$$[8] = $inst_8637__$1$$;
+            $state_8656$$[1] = $cljs$core$truth_$$($inst_8637__$1$$) ? 3 : 4;
             return $cljs$cst$keyword$recur$$;
           }
-          return 11 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ ? $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8654$$, $state_8654$$[2]) : 9 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ ? ($inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ = $callback$jscomp$61$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$61$$.$cljs$core$IFn$_invoke$arity$0$() : 
-          $callback$jscomp$61$$.call(null), $state_8654$$[2] = $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$, $state_8654$$[1] = 11, $cljs$cst$keyword$recur$$) : 5 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ ? ($state_8654$$[1] = $cljs$core$truth_$$($state_8654$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$) : 10 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ ? 
-          ($state_8654$$[2] = null, $state_8654$$[1] = 11, $cljs$cst$keyword$recur$$) : 8 === $inst_8631_inst_8632_inst_8634_inst_8634__$1_inst_8638_inst_8639_inst_8649_state_val_8655$$ ? ($state_8654$$[9] = $state_8654$$[2], $state_8654$$[1] = $cljs$core$truth_$$($callback$jscomp$61$$) ? 9 : 10, $cljs$cst$keyword$recur$$) : null;
+          return 11 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ ? $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8656$$, $state_8656$$[2]) : 9 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ ? ($inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ = $callback$jscomp$61$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$61$$.$cljs$core$IFn$_invoke$arity$0$() : 
+          $callback$jscomp$61$$.call(null), $state_8656$$[2] = $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$, $state_8656$$[1] = 11, $cljs$cst$keyword$recur$$) : 5 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ ? ($state_8656$$[1] = $cljs$core$truth_$$($state_8656$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$) : 10 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ ? 
+          ($state_8656$$[2] = null, $state_8656$$[1] = 11, $cljs$cst$keyword$recur$$) : 8 === $inst_8633_inst_8634_inst_8636_inst_8636__$1_inst_8640_inst_8641_inst_8651_state_val_8657$$ ? ($state_8656$$[9] = $state_8656$$[2], $state_8656$$[1] = $cljs$core$truth_$$($callback$jscomp$61$$) ? 9 : 10, $cljs$cst$keyword$recur$$) : null;
         }
         return function() {
-          function $sitefox$web$create_store_$_state_machine__8512__auto____1$$($state_8654$jscomp$1$$) {
+          function $sitefox$web$create_store_$_state_machine__8514__auto____1$$($state_8656$jscomp$1$$) {
             for (;;) {
               a: {
                 try {
                   for (;;) {
-                    var $result__8514__auto__$jscomp$inline_1205$$ = $switch__8511__auto__$$($state_8654$jscomp$1$$);
-                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8514__auto__$jscomp$inline_1205$$, $cljs$cst$keyword$recur$$)) {
-                      var $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$ = $result__8514__auto__$jscomp$inline_1205$$;
+                    var $result__8516__auto__$jscomp$inline_1205$$ = $switch__8513__auto__$$($state_8656$jscomp$1$$);
+                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8516__auto__$jscomp$inline_1205$$, $cljs$cst$keyword$recur$$)) {
+                      var $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$ = $result__8516__auto__$jscomp$inline_1205$$;
                       break a;
                     }
                   }
-                } catch ($e8671$jscomp$inline_1207$$) {
-                  $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$ = $e8671$jscomp$inline_1207$$;
-                  $state_8654$jscomp$1$$[2] = $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$;
-                  if ($cljs$core$seq$$($state_8654$jscomp$1$$[4])) {
-                    $state_8654$jscomp$1$$[1] = $cljs$core$first$$($state_8654$jscomp$1$$[4]);
+                } catch ($e8673$jscomp$inline_1207$$) {
+                  $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$ = $e8673$jscomp$inline_1207$$;
+                  $state_8656$jscomp$1$$[2] = $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$;
+                  if ($cljs$core$seq$$($state_8656$jscomp$1$$[4])) {
+                    $state_8656$jscomp$1$$[1] = $cljs$core$first$$($state_8656$jscomp$1$$[4]);
                   } else {
-                    throw $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$;
+                    throw $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$;
                   }
-                  $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$ = $cljs$cst$keyword$recur$$;
+                  $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$ = $cljs$cst$keyword$recur$$;
                 }
               }
-              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$, $cljs$cst$keyword$recur$$)) {
-                return $ex__8515__auto__$jscomp$inline_1206_ret_value__8513__auto__$$;
+              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$, $cljs$cst$keyword$recur$$)) {
+                return $ex__8517__auto__$jscomp$inline_1206_ret_value__8515__auto__$$;
               }
             }
           }
-          function $sitefox$web$create_store_$_state_machine__8512__auto____0$$() {
-            var $statearr_8670$$ = [null, null, null, null, null, null, null, null, null, null];
-            $statearr_8670$$[0] = $sitefox$web$create_store_$_state_machine__8512__auto__$$;
-            $statearr_8670$$[1] = 1;
-            return $statearr_8670$$;
+          function $sitefox$web$create_store_$_state_machine__8514__auto____0$$() {
+            var $statearr_8672$$ = [null, null, null, null, null, null, null, null, null, null];
+            $statearr_8672$$[0] = $sitefox$web$create_store_$_state_machine__8514__auto__$$;
+            $statearr_8672$$[1] = 1;
+            return $statearr_8672$$;
           }
-          var $sitefox$web$create_store_$_state_machine__8512__auto__$$ = null;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$$ = function($state_8654$jscomp$2$$) {
+          var $sitefox$web$create_store_$_state_machine__8514__auto__$$ = null;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$$ = function($state_8656$jscomp$2$$) {
             switch(arguments.length) {
               case 0:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____0$$.call(this);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____0$$.call(this);
               case 1:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____1$$.call(this, $state_8654$jscomp$2$$);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____1$$.call(this, $state_8656$jscomp$2$$);
             }
             throw Error("Invalid arity: " + arguments.length);
           };
-          $sitefox$web$create_store_$_state_machine__8512__auto__$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8512__auto____0$$;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8512__auto____1$$;
-          return $sitefox$web$create_store_$_state_machine__8512__auto__$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8514__auto____0$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8514__auto____1$$;
+          return $sitefox$web$create_store_$_state_machine__8514__auto__$$;
         }();
-      }(), $state__8538__auto__$$ = function() {
-        var $statearr_8674$$ = $f__8537__auto__$$();
-        $statearr_8674$$[6] = $c__8536__auto__$$;
-        return $statearr_8674$$;
+      }(), $state__8540__auto__$$ = function() {
+        var $statearr_8676$$ = $f__8539__auto__$$();
+        $statearr_8676$$[6] = $c__8538__auto__$$;
+        return $statearr_8676$$;
       }();
-      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8538__auto__$$);
+      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8540__auto__$$);
     });
-    return $c__8536__auto__$$;
+    return $c__8538__auto__$$;
   };
   $e$jscomp$256$$.get = function($sid$jscomp$1$$, $callback$jscomp$62$$) {
-    var $c__8536__auto__$jscomp$1$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
+    var $c__8538__auto__$jscomp$1$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
     $cljs$core$async$impl$dispatch$run$$(function() {
-      var $f__8537__auto__$jscomp$1$$ = function() {
-        function $switch__8511__auto__$jscomp$1$$($state_8696$$) {
-          var $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[1];
-          if (1 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            return $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $kv$$.get.call($kv$$, $sid$jscomp$1$$), $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $cljs$core$async$interop$p__GT_c$$($inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8696$$, $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$);
+      var $f__8539__auto__$jscomp$1$$ = function() {
+        function $switch__8513__auto__$jscomp$1$$($state_8698$$) {
+          var $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[1];
+          if (1 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            return $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $kv$$.get.call($kv$$, $sid$jscomp$1$$), $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $cljs$core$async$interop$p__GT_c$$($inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8698$$, $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$);
           }
-          if (2 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[2];
-            var $inst_8681__$1$$ = $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ instanceof $cljs$core$ExceptionInfo$$;
-            $state_8696$$[7] = $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$;
-            $state_8696$$[8] = $inst_8681__$1$$;
-            $state_8696$$[1] = $cljs$core$truth_$$($inst_8681__$1$$) ? 3 : 4;
+          if (2 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[2];
+            var $inst_8683__$1$$ = $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ instanceof $cljs$core$ExceptionInfo$$;
+            $state_8698$$[7] = $inst_8683__$1$$;
+            $state_8698$$[8] = $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$;
+            $state_8698$$[1] = $cljs$core$truth_$$($inst_8683__$1$$) ? 3 : 4;
             return $cljs$cst$keyword$recur$$;
           }
-          if (3 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            return $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[7], $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$)), $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = 
-            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8696$$[2] = $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$, $state_8696$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (3 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            return $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[8], $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$)), $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = 
+            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8698$$[2] = $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$, $state_8698$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (4 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            return $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[8], $state_8696$$[2] = $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$, $state_8696$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (4 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            return $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[7], $state_8698$$[2] = $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$, $state_8698$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (5 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            return $state_8696$$[1] = $cljs$core$truth_$$($state_8696$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
+          if (5 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            return $state_8698$$[1] = $cljs$core$truth_$$($state_8698$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
           }
-          if (6 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) {
-            throw $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[7], $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$;
+          if (6 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) {
+            throw $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[8], $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$;
           }
-          return 7 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ ? ($inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[7], $state_8696$$[2] = $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$, $state_8696$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ ? 
-          ($inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $state_8696$$[2], $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$ = $callback$jscomp$62$$.$cljs$core$IFn$_invoke$arity$2$ ? $callback$jscomp$62$$.$cljs$core$IFn$_invoke$arity$2$(null, $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$) : $callback$jscomp$62$$.call(null, 
-          null, $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$), $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8696$$, $inst_8677_inst_8678_inst_8680_inst_8680__$1_inst_8681_inst_8684_inst_8685_inst_8693_inst_8694_state_val_8697$$)) : null;
+          return 7 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ ? ($inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[8], $state_8698$$[2] = $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$, $state_8698$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ ? 
+          ($inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $state_8698$$[2], $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$ = $callback$jscomp$62$$.$cljs$core$IFn$_invoke$arity$2$ ? $callback$jscomp$62$$.$cljs$core$IFn$_invoke$arity$2$(null, $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$) : $callback$jscomp$62$$.call(null, 
+          null, $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$), $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8698$$, $inst_8679_inst_8680_inst_8682_inst_8682__$1_inst_8683_inst_8686_inst_8687_inst_8695_inst_8696_state_val_8699$$)) : null;
         }
         return function() {
-          function $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$1$$($state_8696$jscomp$1$$) {
+          function $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$1$$($state_8698$jscomp$1$$) {
             for (;;) {
               a: {
                 try {
                   for (;;) {
-                    var $result__8514__auto__$jscomp$inline_1211$$ = $switch__8511__auto__$jscomp$1$$($state_8696$jscomp$1$$);
-                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8514__auto__$jscomp$inline_1211$$, $cljs$cst$keyword$recur$$)) {
-                      var $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$ = $result__8514__auto__$jscomp$inline_1211$$;
+                    var $result__8516__auto__$jscomp$inline_1211$$ = $switch__8513__auto__$jscomp$1$$($state_8698$jscomp$1$$);
+                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8516__auto__$jscomp$inline_1211$$, $cljs$cst$keyword$recur$$)) {
+                      var $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$ = $result__8516__auto__$jscomp$inline_1211$$;
                       break a;
                     }
                   }
-                } catch ($e8708$jscomp$inline_1213$$) {
-                  $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$ = $e8708$jscomp$inline_1213$$;
-                  $state_8696$jscomp$1$$[2] = $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$;
-                  if ($cljs$core$seq$$($state_8696$jscomp$1$$[4])) {
-                    $state_8696$jscomp$1$$[1] = $cljs$core$first$$($state_8696$jscomp$1$$[4]);
+                } catch ($e8710$jscomp$inline_1213$$) {
+                  $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$ = $e8710$jscomp$inline_1213$$;
+                  $state_8698$jscomp$1$$[2] = $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$;
+                  if ($cljs$core$seq$$($state_8698$jscomp$1$$[4])) {
+                    $state_8698$jscomp$1$$[1] = $cljs$core$first$$($state_8698$jscomp$1$$[4]);
                   } else {
-                    throw $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$;
+                    throw $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$;
                   }
-                  $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$ = $cljs$cst$keyword$recur$$;
+                  $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$ = $cljs$cst$keyword$recur$$;
                 }
               }
-              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$, $cljs$cst$keyword$recur$$)) {
-                return $ex__8515__auto__$jscomp$inline_1212_ret_value__8513__auto__$jscomp$1$$;
+              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$, $cljs$cst$keyword$recur$$)) {
+                return $ex__8517__auto__$jscomp$inline_1212_ret_value__8515__auto__$jscomp$1$$;
               }
             }
           }
-          function $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$1$$() {
-            var $statearr_8707$$ = [null, null, null, null, null, null, null, null, null];
-            $statearr_8707$$[0] = $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$;
-            $statearr_8707$$[1] = 1;
-            return $statearr_8707$$;
+          function $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$1$$() {
+            var $statearr_8709$$ = [null, null, null, null, null, null, null, null, null];
+            $statearr_8709$$[0] = $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$;
+            $statearr_8709$$[1] = 1;
+            return $statearr_8709$$;
           }
-          var $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$ = null;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$ = function($state_8696$jscomp$2$$) {
+          var $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$ = null;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$ = function($state_8698$jscomp$2$$) {
             switch(arguments.length) {
               case 0:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$1$$.call(this);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$1$$.call(this);
               case 1:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$1$$.call(this, $state_8696$jscomp$2$$);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$1$$.call(this, $state_8698$jscomp$2$$);
             }
             throw Error("Invalid arity: " + arguments.length);
           };
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$1$$;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$1$$;
-          return $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$1$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$1$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$1$$;
+          return $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$1$$;
         }();
-      }(), $state__8538__auto__$jscomp$1$$ = function() {
-        var $statearr_8711$$ = $f__8537__auto__$jscomp$1$$();
-        $statearr_8711$$[6] = $c__8536__auto__$jscomp$1$$;
-        return $statearr_8711$$;
+      }(), $state__8540__auto__$jscomp$1$$ = function() {
+        var $statearr_8713$$ = $f__8539__auto__$jscomp$1$$();
+        $statearr_8713$$[6] = $c__8538__auto__$jscomp$1$$;
+        return $statearr_8713$$;
       }();
-      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8538__auto__$jscomp$1$$);
+      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8540__auto__$jscomp$1$$);
     });
-    return $c__8536__auto__$jscomp$1$$;
+    return $c__8538__auto__$jscomp$1$$;
   };
   $e$jscomp$256$$.set = function($sid$jscomp$2$$, $session$$, $callback$jscomp$63$$) {
-    var $c__8536__auto__$jscomp$2$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
+    var $c__8538__auto__$jscomp$2$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
     $cljs$core$async$impl$dispatch$run$$(function() {
-      var $f__8537__auto__$jscomp$2$$ = function() {
-        function $switch__8511__auto__$jscomp$2$$($state_8733$$) {
-          var $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[1];
-          if (1 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            return $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $kv$$.set.call($kv$$, $sid$jscomp$2$$, $session$$), $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $cljs$core$async$interop$p__GT_c$$($inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8733$$, $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$);
+      var $f__8539__auto__$jscomp$2$$ = function() {
+        function $switch__8513__auto__$jscomp$2$$($state_8735$$) {
+          var $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[1];
+          if (1 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            return $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $kv$$.set.call($kv$$, $sid$jscomp$2$$, $session$$), $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $cljs$core$async$interop$p__GT_c$$($inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8735$$, $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$);
           }
-          if (2 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[2];
-            var $inst_8718__$1_inst_8731$$ = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ instanceof $cljs$core$ExceptionInfo$$;
-            $state_8733$$[7] = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$;
-            $state_8733$$[8] = $inst_8718__$1_inst_8731$$;
-            $state_8733$$[1] = $cljs$core$truth_$$($inst_8718__$1_inst_8731$$) ? 3 : 4;
+          if (2 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[2];
+            var $inst_8720__$1_inst_8733$$ = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ instanceof $cljs$core$ExceptionInfo$$;
+            $state_8735$$[7] = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$;
+            $state_8735$$[8] = $inst_8720__$1_inst_8733$$;
+            $state_8735$$[1] = $cljs$core$truth_$$($inst_8720__$1_inst_8733$$) ? 3 : 4;
             return $cljs$cst$keyword$recur$$;
           }
-          if (3 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            return $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[7], $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$)), $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = 
-            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8733$$[2] = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$, $state_8733$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (3 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            return $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[7], $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$)), $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = 
+            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8735$$[2] = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$, $state_8735$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (4 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            return $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[8], $state_8733$$[2] = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$, $state_8733$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (4 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            return $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[8], $state_8735$$[2] = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$, $state_8735$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (5 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            return $state_8733$$[1] = $cljs$core$truth_$$($state_8733$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
+          if (5 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            return $state_8735$$[1] = $cljs$core$truth_$$($state_8735$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
           }
-          if (6 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$) {
-            throw $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[7], $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$;
+          if (6 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$) {
+            throw $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[7], $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$;
           }
-          return 7 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ ? ($inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[7], $state_8733$$[2] = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$, $state_8733$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ ? 
-          ($inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$ = $state_8733$$[2], $inst_8718__$1_inst_8731$$ = $callback$jscomp$63$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$63$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$63$$.call(null), $state_8733$$[9] = $inst_8714_inst_8715_inst_8717_inst_8717__$1_inst_8718_inst_8721_inst_8722_inst_8730_state_val_8734$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8733$$, $inst_8718__$1_inst_8731$$)) : 
+          return 7 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ ? ($inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[7], $state_8735$$[2] = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$, $state_8735$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ ? 
+          ($inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$ = $state_8735$$[2], $inst_8720__$1_inst_8733$$ = $callback$jscomp$63$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$63$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$63$$.call(null), $state_8735$$[9] = $inst_8716_inst_8717_inst_8719_inst_8719__$1_inst_8720_inst_8723_inst_8724_inst_8732_state_val_8736$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8735$$, $inst_8720__$1_inst_8733$$)) : 
           null;
         }
         return function() {
-          function $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$2$$($state_8733$jscomp$1$$) {
+          function $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$2$$($state_8735$jscomp$1$$) {
             for (;;) {
               a: {
                 try {
                   for (;;) {
-                    var $result__8514__auto__$jscomp$inline_1218$$ = $switch__8511__auto__$jscomp$2$$($state_8733$jscomp$1$$);
-                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8514__auto__$jscomp$inline_1218$$, $cljs$cst$keyword$recur$$)) {
-                      var $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$ = $result__8514__auto__$jscomp$inline_1218$$;
+                    var $result__8516__auto__$jscomp$inline_1218$$ = $switch__8513__auto__$jscomp$2$$($state_8735$jscomp$1$$);
+                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8516__auto__$jscomp$inline_1218$$, $cljs$cst$keyword$recur$$)) {
+                      var $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$ = $result__8516__auto__$jscomp$inline_1218$$;
                       break a;
                     }
                   }
-                } catch ($e8746$jscomp$inline_1220$$) {
-                  $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$ = $e8746$jscomp$inline_1220$$;
-                  $state_8733$jscomp$1$$[2] = $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$;
-                  if ($cljs$core$seq$$($state_8733$jscomp$1$$[4])) {
-                    $state_8733$jscomp$1$$[1] = $cljs$core$first$$($state_8733$jscomp$1$$[4]);
+                } catch ($e8748$jscomp$inline_1220$$) {
+                  $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$ = $e8748$jscomp$inline_1220$$;
+                  $state_8735$jscomp$1$$[2] = $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$;
+                  if ($cljs$core$seq$$($state_8735$jscomp$1$$[4])) {
+                    $state_8735$jscomp$1$$[1] = $cljs$core$first$$($state_8735$jscomp$1$$[4]);
                   } else {
-                    throw $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$;
+                    throw $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$;
                   }
-                  $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$ = $cljs$cst$keyword$recur$$;
+                  $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$ = $cljs$cst$keyword$recur$$;
                 }
               }
-              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$, $cljs$cst$keyword$recur$$)) {
-                return $ex__8515__auto__$jscomp$inline_1219_ret_value__8513__auto__$jscomp$2$$;
+              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$, $cljs$cst$keyword$recur$$)) {
+                return $ex__8517__auto__$jscomp$inline_1219_ret_value__8515__auto__$jscomp$2$$;
               }
             }
           }
-          function $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$2$$() {
-            var $statearr_8745$$ = [null, null, null, null, null, null, null, null, null, null];
-            $statearr_8745$$[0] = $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$;
-            $statearr_8745$$[1] = 1;
-            return $statearr_8745$$;
+          function $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$2$$() {
+            var $statearr_8747$$ = [null, null, null, null, null, null, null, null, null, null];
+            $statearr_8747$$[0] = $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$;
+            $statearr_8747$$[1] = 1;
+            return $statearr_8747$$;
           }
-          var $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$ = null;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$ = function($state_8733$jscomp$2$$) {
+          var $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$ = null;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$ = function($state_8735$jscomp$2$$) {
             switch(arguments.length) {
               case 0:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$2$$.call(this);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$2$$.call(this);
               case 1:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$2$$.call(this, $state_8733$jscomp$2$$);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$2$$.call(this, $state_8735$jscomp$2$$);
             }
             throw Error("Invalid arity: " + arguments.length);
           };
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$2$$;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$2$$;
-          return $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$2$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$2$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$2$$;
+          return $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$2$$;
         }();
-      }(), $state__8538__auto__$jscomp$2$$ = function() {
-        var $statearr_8749$$ = $f__8537__auto__$jscomp$2$$();
-        $statearr_8749$$[6] = $c__8536__auto__$jscomp$2$$;
-        return $statearr_8749$$;
+      }(), $state__8540__auto__$jscomp$2$$ = function() {
+        var $statearr_8751$$ = $f__8539__auto__$jscomp$2$$();
+        $statearr_8751$$[6] = $c__8538__auto__$jscomp$2$$;
+        return $statearr_8751$$;
       }();
-      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8538__auto__$jscomp$2$$);
+      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8540__auto__$jscomp$2$$);
     });
-    return $c__8536__auto__$jscomp$2$$;
+    return $c__8538__auto__$jscomp$2$$;
   };
   $e$jscomp$256$$.touch = function($sid$jscomp$3$$, $session$jscomp$1$$, $callback$jscomp$64$$) {
-    var $c__8536__auto__$jscomp$3$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
+    var $c__8538__auto__$jscomp$3$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
     $cljs$core$async$impl$dispatch$run$$(function() {
-      var $f__8537__auto__$jscomp$3$$ = function() {
-        function $switch__8511__auto__$jscomp$3$$($state_8771$$) {
-          var $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[1];
-          if (1 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            return $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $kv$$.set.call($kv$$, $sid$jscomp$3$$, $session$jscomp$1$$), $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $cljs$core$async$interop$p__GT_c$$($inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8771$$, $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$);
+      var $f__8539__auto__$jscomp$3$$ = function() {
+        function $switch__8513__auto__$jscomp$3$$($state_8773$$) {
+          var $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[1];
+          if (1 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            return $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $kv$$.set.call($kv$$, $sid$jscomp$3$$, $session$jscomp$1$$), $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $cljs$core$async$interop$p__GT_c$$($inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8773$$, $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$);
           }
-          if (2 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[2];
-            var $inst_8756__$1_inst_8769$$ = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ instanceof $cljs$core$ExceptionInfo$$;
-            $state_8771$$[7] = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$;
-            $state_8771$$[8] = $inst_8756__$1_inst_8769$$;
-            $state_8771$$[1] = $cljs$core$truth_$$($inst_8756__$1_inst_8769$$) ? 3 : 4;
+          if (2 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[2];
+            var $inst_8758__$1_inst_8771$$ = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ instanceof $cljs$core$ExceptionInfo$$;
+            $state_8773$$[7] = $inst_8758__$1_inst_8771$$;
+            $state_8773$$[8] = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$;
+            $state_8773$$[1] = $cljs$core$truth_$$($inst_8758__$1_inst_8771$$) ? 3 : 4;
             return $cljs$cst$keyword$recur$$;
           }
-          if (3 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            return $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[7], $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$)), $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = 
-            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8771$$[2] = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$, $state_8771$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (3 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            return $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[8], $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$)), $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = 
+            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8773$$[2] = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$, $state_8773$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (4 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            return $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[8], $state_8771$$[2] = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$, $state_8771$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (4 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            return $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[7], $state_8773$$[2] = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$, $state_8773$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (5 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            return $state_8771$$[1] = $cljs$core$truth_$$($state_8771$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
+          if (5 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            return $state_8773$$[1] = $cljs$core$truth_$$($state_8773$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
           }
-          if (6 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$) {
-            throw $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[7], $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$;
+          if (6 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$) {
+            throw $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[8], $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$;
           }
-          return 7 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ ? ($inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[7], $state_8771$$[2] = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$, $state_8771$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ ? 
-          ($inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$ = $state_8771$$[2], $inst_8756__$1_inst_8769$$ = $callback$jscomp$64$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$64$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$64$$.call(null), $state_8771$$[9] = $inst_8752_inst_8753_inst_8755_inst_8755__$1_inst_8756_inst_8759_inst_8760_inst_8768_state_val_8772$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8771$$, $inst_8756__$1_inst_8769$$)) : 
+          return 7 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ ? ($inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[8], $state_8773$$[2] = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$, $state_8773$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ ? 
+          ($inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$ = $state_8773$$[2], $inst_8758__$1_inst_8771$$ = $callback$jscomp$64$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$64$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$64$$.call(null), $state_8773$$[9] = $inst_8754_inst_8755_inst_8757_inst_8757__$1_inst_8758_inst_8761_inst_8762_inst_8770_state_val_8774$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8773$$, $inst_8758__$1_inst_8771$$)) : 
           null;
         }
         return function() {
-          function $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$3$$($state_8771$jscomp$1$$) {
+          function $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$3$$($state_8773$jscomp$1$$) {
             for (;;) {
               a: {
                 try {
                   for (;;) {
-                    var $result__8514__auto__$jscomp$inline_1225$$ = $switch__8511__auto__$jscomp$3$$($state_8771$jscomp$1$$);
-                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8514__auto__$jscomp$inline_1225$$, $cljs$cst$keyword$recur$$)) {
-                      var $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$ = $result__8514__auto__$jscomp$inline_1225$$;
+                    var $result__8516__auto__$jscomp$inline_1225$$ = $switch__8513__auto__$jscomp$3$$($state_8773$jscomp$1$$);
+                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8516__auto__$jscomp$inline_1225$$, $cljs$cst$keyword$recur$$)) {
+                      var $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$ = $result__8516__auto__$jscomp$inline_1225$$;
                       break a;
                     }
                   }
-                } catch ($e8784$jscomp$inline_1227$$) {
-                  $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$ = $e8784$jscomp$inline_1227$$;
-                  $state_8771$jscomp$1$$[2] = $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$;
-                  if ($cljs$core$seq$$($state_8771$jscomp$1$$[4])) {
-                    $state_8771$jscomp$1$$[1] = $cljs$core$first$$($state_8771$jscomp$1$$[4]);
+                } catch ($e8786$jscomp$inline_1227$$) {
+                  $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$ = $e8786$jscomp$inline_1227$$;
+                  $state_8773$jscomp$1$$[2] = $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$;
+                  if ($cljs$core$seq$$($state_8773$jscomp$1$$[4])) {
+                    $state_8773$jscomp$1$$[1] = $cljs$core$first$$($state_8773$jscomp$1$$[4]);
                   } else {
-                    throw $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$;
+                    throw $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$;
                   }
-                  $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$ = $cljs$cst$keyword$recur$$;
+                  $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$ = $cljs$cst$keyword$recur$$;
                 }
               }
-              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$, $cljs$cst$keyword$recur$$)) {
-                return $ex__8515__auto__$jscomp$inline_1226_ret_value__8513__auto__$jscomp$3$$;
+              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$, $cljs$cst$keyword$recur$$)) {
+                return $ex__8517__auto__$jscomp$inline_1226_ret_value__8515__auto__$jscomp$3$$;
               }
             }
           }
-          function $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$3$$() {
-            var $statearr_8783$$ = [null, null, null, null, null, null, null, null, null, null];
-            $statearr_8783$$[0] = $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$;
-            $statearr_8783$$[1] = 1;
-            return $statearr_8783$$;
+          function $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$3$$() {
+            var $statearr_8785$$ = [null, null, null, null, null, null, null, null, null, null];
+            $statearr_8785$$[0] = $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$;
+            $statearr_8785$$[1] = 1;
+            return $statearr_8785$$;
           }
-          var $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$ = null;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$ = function($state_8771$jscomp$2$$) {
+          var $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$ = null;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$ = function($state_8773$jscomp$2$$) {
             switch(arguments.length) {
               case 0:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$3$$.call(this);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$3$$.call(this);
               case 1:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$3$$.call(this, $state_8771$jscomp$2$$);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$3$$.call(this, $state_8773$jscomp$2$$);
             }
             throw Error("Invalid arity: " + arguments.length);
           };
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$3$$;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$3$$;
-          return $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$3$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$3$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$3$$;
+          return $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$3$$;
         }();
-      }(), $state__8538__auto__$jscomp$3$$ = function() {
-        var $statearr_8787$$ = $f__8537__auto__$jscomp$3$$();
-        $statearr_8787$$[6] = $c__8536__auto__$jscomp$3$$;
-        return $statearr_8787$$;
+      }(), $state__8540__auto__$jscomp$3$$ = function() {
+        var $statearr_8789$$ = $f__8539__auto__$jscomp$3$$();
+        $statearr_8789$$[6] = $c__8538__auto__$jscomp$3$$;
+        return $statearr_8789$$;
       }();
-      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8538__auto__$jscomp$3$$);
+      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8540__auto__$jscomp$3$$);
     });
-    return $c__8536__auto__$jscomp$3$$;
+    return $c__8538__auto__$jscomp$3$$;
   };
   $e$jscomp$256$$.clear = function($callback$jscomp$65$$) {
-    var $c__8536__auto__$jscomp$4$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
+    var $c__8538__auto__$jscomp$4$$ = $cljs$core$async$chan$cljs$0core$0IFn$0_invoke$0arity$03$$(1);
     $cljs$core$async$impl$dispatch$run$$(function() {
-      var $f__8537__auto__$jscomp$4$$ = function() {
-        function $switch__8511__auto__$jscomp$4$$($state_8807$$) {
-          var $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[1];
-          if (1 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            return $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = call($kv$$, $cljs$cst$keyword$clear$$), $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $cljs$core$async$interop$p__GT_c$$($inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8807$$, $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$);
+      var $f__8539__auto__$jscomp$4$$ = function() {
+        function $switch__8513__auto__$jscomp$4$$($state_8809$$) {
+          var $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[1];
+          if (1 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            return $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = call($kv$$, $cljs$cst$keyword$clear$$), $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $cljs$core$async$interop$p__GT_c$$($inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$), $cljs$core$async$impl$ioc_helpers$take_BANG_$$($state_8809$$, $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$);
           }
-          if (2 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[2];
-            var $inst_8792__$1_inst_8805$$ = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ instanceof $cljs$core$ExceptionInfo$$;
-            $state_8807$$[7] = $inst_8792__$1_inst_8805$$;
-            $state_8807$$[8] = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$;
-            $state_8807$$[1] = $cljs$core$truth_$$($inst_8792__$1_inst_8805$$) ? 3 : 4;
+          if (2 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[2];
+            var $inst_8794__$1_inst_8807$$ = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ instanceof $cljs$core$ExceptionInfo$$;
+            $state_8809$$[7] = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$;
+            $state_8809$$[8] = $inst_8794__$1_inst_8807$$;
+            $state_8809$$[1] = $cljs$core$truth_$$($inst_8794__$1_inst_8807$$) ? 3 : 4;
             return $cljs$cst$keyword$recur$$;
           }
-          if (3 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            return $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[8], $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$)), $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = 
-            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8807$$[2] = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$, $state_8807$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (3 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            return $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[7], $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $cljs$cst$keyword$error$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$ex_data$$($inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$)), $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = 
+            $cljs$core$_EQ_$$.$cljs$core$IFn$_invoke$arity$2$($inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$, $cljs$cst$keyword$promise_DASH_error$$), $state_8809$$[2] = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$, $state_8809$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (4 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            return $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[7], $state_8807$$[2] = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$, $state_8807$$[1] = 5, $cljs$cst$keyword$recur$$;
+          if (4 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            return $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[8], $state_8809$$[2] = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$, $state_8809$$[1] = 5, $cljs$cst$keyword$recur$$;
           }
-          if (5 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            return $state_8807$$[1] = $cljs$core$truth_$$($state_8807$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
+          if (5 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            return $state_8809$$[1] = $cljs$core$truth_$$($state_8809$$[2]) ? 6 : 7, $cljs$cst$keyword$recur$$;
           }
-          if (6 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$) {
-            throw $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[8], $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$;
+          if (6 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$) {
+            throw $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[7], $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$;
           }
-          return 7 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ ? ($inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[8], $state_8807$$[2] = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$, $state_8807$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ ? 
-          ($inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$ = $state_8807$$[2], $inst_8792__$1_inst_8805$$ = $callback$jscomp$65$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$65$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$65$$.call(null), $state_8807$$[9] = $inst_8788_inst_8789_inst_8791_inst_8791__$1_inst_8792_inst_8795_inst_8796_inst_8804_state_val_8808$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8807$$, $inst_8792__$1_inst_8805$$)) : 
+          return 7 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ ? ($inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[7], $state_8809$$[2] = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$, $state_8809$$[1] = 8, $cljs$cst$keyword$recur$$) : 8 === $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ ? 
+          ($inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$ = $state_8809$$[2], $inst_8794__$1_inst_8807$$ = $callback$jscomp$65$$.$cljs$core$IFn$_invoke$arity$0$ ? $callback$jscomp$65$$.$cljs$core$IFn$_invoke$arity$0$() : $callback$jscomp$65$$.call(null), $state_8809$$[9] = $inst_8790_inst_8791_inst_8793_inst_8793__$1_inst_8794_inst_8797_inst_8798_inst_8806_state_val_8810$$, $cljs$core$async$impl$ioc_helpers$return_chan$$($state_8809$$, $inst_8794__$1_inst_8807$$)) : 
           null;
         }
         return function() {
-          function $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$4$$($state_8807$jscomp$1$$) {
+          function $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$4$$($state_8809$jscomp$1$$) {
             for (;;) {
               a: {
                 try {
                   for (;;) {
-                    var $result__8514__auto__$jscomp$inline_1232$$ = $switch__8511__auto__$jscomp$4$$($state_8807$jscomp$1$$);
-                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8514__auto__$jscomp$inline_1232$$, $cljs$cst$keyword$recur$$)) {
-                      var $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$ = $result__8514__auto__$jscomp$inline_1232$$;
+                    var $result__8516__auto__$jscomp$inline_1232$$ = $switch__8513__auto__$jscomp$4$$($state_8809$jscomp$1$$);
+                    if (!$cljs$core$keyword_identical_QMARK_$$($result__8516__auto__$jscomp$inline_1232$$, $cljs$cst$keyword$recur$$)) {
+                      var $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$ = $result__8516__auto__$jscomp$inline_1232$$;
                       break a;
                     }
                   }
-                } catch ($e8820$jscomp$inline_1234$$) {
-                  $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$ = $e8820$jscomp$inline_1234$$;
-                  $state_8807$jscomp$1$$[2] = $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$;
-                  if ($cljs$core$seq$$($state_8807$jscomp$1$$[4])) {
-                    $state_8807$jscomp$1$$[1] = $cljs$core$first$$($state_8807$jscomp$1$$[4]);
+                } catch ($e8822$jscomp$inline_1234$$) {
+                  $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$ = $e8822$jscomp$inline_1234$$;
+                  $state_8809$jscomp$1$$[2] = $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$;
+                  if ($cljs$core$seq$$($state_8809$jscomp$1$$[4])) {
+                    $state_8809$jscomp$1$$[1] = $cljs$core$first$$($state_8809$jscomp$1$$[4]);
                   } else {
-                    throw $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$;
+                    throw $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$;
                   }
-                  $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$ = $cljs$cst$keyword$recur$$;
+                  $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$ = $cljs$cst$keyword$recur$$;
                 }
               }
-              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$, $cljs$cst$keyword$recur$$)) {
-                return $ex__8515__auto__$jscomp$inline_1233_ret_value__8513__auto__$jscomp$4$$;
+              if (!$cljs$core$keyword_identical_QMARK_$$($ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$, $cljs$cst$keyword$recur$$)) {
+                return $ex__8517__auto__$jscomp$inline_1233_ret_value__8515__auto__$jscomp$4$$;
               }
             }
           }
-          function $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$4$$() {
-            var $statearr_8819$$ = [null, null, null, null, null, null, null, null, null, null];
-            $statearr_8819$$[0] = $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$;
-            $statearr_8819$$[1] = 1;
-            return $statearr_8819$$;
+          function $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$4$$() {
+            var $statearr_8821$$ = [null, null, null, null, null, null, null, null, null, null];
+            $statearr_8821$$[0] = $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$;
+            $statearr_8821$$[1] = 1;
+            return $statearr_8821$$;
           }
-          var $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$ = null;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$ = function($state_8807$jscomp$2$$) {
+          var $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$ = null;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$ = function($state_8809$jscomp$2$$) {
             switch(arguments.length) {
               case 0:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$4$$.call(this);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$4$$.call(this);
               case 1:
-                return $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$4$$.call(this, $state_8807$jscomp$2$$);
+                return $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$4$$.call(this, $state_8809$jscomp$2$$);
             }
             throw Error("Invalid arity: " + arguments.length);
           };
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8512__auto____0$jscomp$4$$;
-          $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8512__auto____1$jscomp$4$$;
-          return $sitefox$web$create_store_$_state_machine__8512__auto__$jscomp$4$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$.$cljs$core$IFn$_invoke$arity$0$ = $sitefox$web$create_store_$_state_machine__8514__auto____0$jscomp$4$$;
+          $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$.$cljs$core$IFn$_invoke$arity$1$ = $sitefox$web$create_store_$_state_machine__8514__auto____1$jscomp$4$$;
+          return $sitefox$web$create_store_$_state_machine__8514__auto__$jscomp$4$$;
         }();
-      }(), $state__8538__auto__$jscomp$4$$ = function() {
-        var $statearr_8823$$ = $f__8537__auto__$jscomp$4$$();
-        $statearr_8823$$[6] = $c__8536__auto__$jscomp$4$$;
-        return $statearr_8823$$;
+      }(), $state__8540__auto__$jscomp$4$$ = function() {
+        var $statearr_8825$$ = $f__8539__auto__$jscomp$4$$();
+        $statearr_8825$$[6] = $c__8538__auto__$jscomp$4$$;
+        return $statearr_8825$$;
       }();
-      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8538__auto__$jscomp$4$$);
+      return $cljs$core$async$impl$ioc_helpers$run_state_machine_wrapped$$($state__8540__auto__$jscomp$4$$);
     });
-    return $c__8536__auto__$jscomp$4$$;
+    return $c__8538__auto__$jscomp$4$$;
   };
   return $e$jscomp$256$$;
 }
 function $sitefox$web$add_default_middleware$$($app$jscomp$1$$) {
-  var $access_log_8917_logs_8916$$ = [$cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$(__dirname), "/logs"].join("");
-  $access_log_8917_logs_8916$$ = $shadow$js$shim$module$0rotating_file_stream$$.createStream("access.log", {interval:"7d", path:$access_log_8917_logs_8916$$});
-  var $kv_session_8918_store_8919$$ = new $shadow$js$shim$module$0keyv$$($sitefox$db$database_url$$, {namespace:"session"});
-  $kv_session_8918_store_8919$$ = $sitefox$web$create_store$$($kv_session_8918_store_8919$$);
-  $app$jscomp$1$$.use($shadow$js$shim$module$0express_session$$({secret:$sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("SECRET", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$(["DEVMODE"])), saveUninitialized:!1, resave:!0, cookie:{secure:"auto", httpOnly:!0, maxAge:31536E7}, store:$kv_session_8918_store_8919$$}));
-  $app$jscomp$1$$.use($shadow$js$shim$module$0morgan$$("combined", {stream:$access_log_8917_logs_8916$$}));
+  var $access_log_8915_logs_8914$$ = [$cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$(__dirname), "/logs"].join("");
+  $access_log_8915_logs_8914$$ = $shadow$js$shim$module$0rotating_file_stream$$.createStream("access.log", {interval:"7d", path:$access_log_8915_logs_8914$$});
+  var $kv_session_8916_store_8917$$ = new $shadow$js$shim$module$0keyv$$($sitefox$db$database_url$$, {namespace:"session"});
+  $kv_session_8916_store_8917$$ = $sitefox$web$create_store$$($kv_session_8916_store_8917$$);
+  $app$jscomp$1$$.use($shadow$js$shim$module$0express_session$$({secret:$sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("SECRET", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$(["DEVMODE"])), saveUninitialized:!1, resave:!0, cookie:{secure:"auto", httpOnly:!0, maxAge:31536E7}, store:$kv_session_8916_store_8917$$}));
+  $app$jscomp$1$$.use($shadow$js$shim$module$0morgan$$("combined", {stream:$access_log_8915_logs_8914$$}));
   $app$jscomp$1$$.set("trust proxy", "loopback");
   $app$jscomp$1$$.use($shadow$js$shim$module$0cookie_parser$$($sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("SECRET", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$(["DEVMODE"]))));
   $app$jscomp$1$$.use($shadow$js$shim$module$0body_parser$$.json({limit:"10mb", extended:!0, parameterLimit:1000}));
@@ -11180,12 +11180,12 @@ function $sitefox$web$add_default_middleware$$($app$jscomp$1$$) {
 function $sitefox$web$serve$$($app$jscomp$4$$) {
   var $host$jscomp$1$$ = $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("BIND_ADDRESS", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$(["127.0.0.1"])), $port$jscomp$18$$ = $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("PORT", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$(["8000"])), $srv$$ = $app$jscomp$4$$.listen.bind($app$jscomp$4$$, $port$jscomp$18$$, $host$jscomp$1$$);
   return new Promise(function($res$jscomp$26$$) {
-    function $G__8824$$() {
+    function $G__8826$$() {
       console.log("Web server started: ", ["http://", $cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($host$jscomp$1$$), ":", $cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($port$jscomp$18$$)].join(""));
-      var $G__8825$$ = [$host$jscomp$1$$, $port$jscomp$18$$];
-      return $res$jscomp$26$$.$cljs$core$IFn$_invoke$arity$1$ ? $res$jscomp$26$$.$cljs$core$IFn$_invoke$arity$1$($G__8825$$) : $res$jscomp$26$$.call(null, $G__8825$$);
+      var $G__8827$$ = [$host$jscomp$1$$, $port$jscomp$18$$];
+      return $res$jscomp$26$$.$cljs$core$IFn$_invoke$arity$1$ ? $res$jscomp$26$$.$cljs$core$IFn$_invoke$arity$1$($G__8827$$) : $res$jscomp$26$$.call(null, $G__8827$$);
     }
-    return $srv$$.$cljs$core$IFn$_invoke$arity$1$ ? $srv$$.$cljs$core$IFn$_invoke$arity$1$($G__8824$$) : $srv$$.call(null, $G__8824$$);
+    return $srv$$.$cljs$core$IFn$_invoke$arity$1$ ? $srv$$.$cljs$core$IFn$_invoke$arity$1$($G__8826$$) : $srv$$.call(null, $G__8826$$);
   });
 }
 function $sitefox$web$start$$() {
@@ -11201,8 +11201,8 @@ var $shadow$js$shim$module$0nodemailer$$ = require("nodemailer");
 function $sitefox$mail$transport$$() {
   var $smtp_url$$ = $sitefox$util$env$cljs$0core$0IFn$0_invoke$0arity$0variadic$$("SMTP_SERVER", $cljs$core$prim_seq$cljs$0core$0IFn$0_invoke$0arity$02$$([null]));
   return $cljs$core$truth_$$($smtp_url$$) ? new Promise(function($res$jscomp$27$$) {
-    var $G__8525$$ = $shadow$js$shim$module$0nodemailer$$.createTransport($smtp_url$$);
-    return $res$jscomp$27$$.$cljs$core$IFn$_invoke$arity$1$ ? $res$jscomp$27$$.$cljs$core$IFn$_invoke$arity$1$($G__8525$$) : $res$jscomp$27$$.call(null, $G__8525$$);
+    var $G__8527$$ = $shadow$js$shim$module$0nodemailer$$.createTransport($smtp_url$$);
+    return $res$jscomp$27$$.$cljs$core$IFn$_invoke$arity$1$ ? $res$jscomp$27$$.$cljs$core$IFn$_invoke$arity$1$($G__8527$$) : $res$jscomp$27$$.call(null, $G__8527$$);
   }) : $shadow$js$shim$module$0nodemailer$$.createTestAccount().then(function($account$$) {
     return $shadow$js$shim$module$0nodemailer$$.createTransport({host:"smtp.ethereal.email", port:587, secure:!1, auth:{user:$account$$.user, pass:$account$$.pass}});
   });
@@ -11231,24 +11231,24 @@ function $ghperks$auth$setup_routes$$($app$jscomp$6$$) {
   $app$jscomp$6$$.use($shadow$js$shim$module$0passport$$.initialize());
   $app$jscomp$6$$.use($shadow$js$shim$module$0passport$$.session());
   $app$jscomp$6$$.get("/auth/github", $shadow$js$shim$module$0passport$$.authenticate.call($shadow$js$shim$module$0passport$$, "github", $cljs$core$clj__GT_js$$(new $cljs$core$PersistentArrayMap$$(null, 1, [$cljs$cst$keyword$scope$$, new $cljs$core$PersistentVector$$(null, 1, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, ["user:email"], null)], null))));
-  $app$jscomp$6$$.get("/auth/logout", function($parent__6020__auto___8627_req$jscomp$2$$, $res$jscomp$28$$) {
-    $parent__6020__auto___8627_req$jscomp$2$$.logout.call($parent__6020__auto___8627_req$jscomp$2$$);
-    $parent__6020__auto___8627_req$jscomp$2$$ = $parent__6020__auto___8627_req$jscomp$2$$.session;
-    $parent__6020__auto___8627_req$jscomp$2$$.destroy.call($parent__6020__auto___8627_req$jscomp$2$$);
+  $app$jscomp$6$$.get("/auth/logout", function($parent__6020__auto___8629_req$jscomp$2$$, $res$jscomp$28$$) {
+    $parent__6020__auto___8629_req$jscomp$2$$.logout.call($parent__6020__auto___8629_req$jscomp$2$$);
+    $parent__6020__auto___8629_req$jscomp$2$$ = $parent__6020__auto___8629_req$jscomp$2$$.session;
+    $parent__6020__auto___8629_req$jscomp$2$$.destroy.call($parent__6020__auto___8629_req$jscomp$2$$);
     return $res$jscomp$28$$.redirect("/");
   });
   $app$jscomp$6$$.get("/auth/github/callback", $shadow$js$shim$module$0passport$$.authenticate.call($shadow$js$shim$module$0passport$$, "github", $cljs$core$clj__GT_js$$(new $cljs$core$PersistentArrayMap$$(null, 1, [$cljs$cst$keyword$failureRedirect$$, "/auth/error"], null))), function($req$jscomp$3$$, $res$jscomp$29$$) {
     return $promesa$protocols$_bind$$(null, function() {
       return $promesa$protocols$_bind$$(function() {
-        var $obj8599$$ = null != $req$jscomp$3$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$3$$) ? $req$jscomp$3$$.user : void 0;
-        if (null != $obj8599$$ && "id" in $obj8599$$) {
-          return $obj8599$$.id;
+        var $obj8608$$ = null != $req$jscomp$3$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$3$$) ? $req$jscomp$3$$.user : void 0;
+        if (null != $obj8608$$ && "id" in $obj8608$$) {
+          return $obj8608$$.id;
         }
       }(), function($id$jscomp$17$$) {
         return $promesa$protocols$_bind$$(function() {
-          var $obj8617$$ = null != $req$jscomp$3$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$3$$) ? $req$jscomp$3$$.user : void 0;
-          if (null != $obj8617$$ && "username" in $obj8617$$) {
-            return $obj8617$$.username;
+          var $obj8619$$ = null != $req$jscomp$3$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$3$$) ? $req$jscomp$3$$.user : void 0;
+          if (null != $obj8619$$ && "username" in $obj8619$$) {
+            return $obj8619$$.username;
           }
         }(), function($username$$) {
           return $promesa$protocols$_bind$$((new $shadow$js$shim$module$0keyv$$($sitefox$db$database_url$$, {namespace:"pre-sign-up"})).set(["gh-", $cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($id$jscomp$17$$)].join(""), $cljs$core$clj__GT_js$$(new $cljs$core$PersistentArrayMap$$(null, 2, [$cljs$cst$keyword$timestamp$$, new Date, $cljs$cst$keyword$user$$, $req$jscomp$3$$.user], null))), function() {
@@ -11275,61 +11275,57 @@ function $ghperks$auth$setup_routes$$($app$jscomp$6$$) {
 ;(function() {
   var $log_fn_logs$$ = [$cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$(__dirname), "/logs"].join(""), $error_log$$ = $shadow$js$shim$module$0rotating_file_stream$$.createStream("error.log", $cljs$core$clj__GT_js$$(new $cljs$core$PersistentArrayMap$$(null, 3, [$cljs$cst$keyword$interval$$, "7d", $cljs$cst$keyword$path$$, $log_fn_logs$$, $cljs$cst$keyword$teeToStdout$$, !0], null)));
   $log_fn_logs$$ = function() {
-    function $G__7290$$($var_args$jscomp$385$$) {
-      var $G__7300__i_args$jscomp$154$$ = null;
+    function $G__7321$$($var_args$jscomp$385$$) {
+      var $G__7333__i_args$jscomp$154$$ = null;
       if (0 < arguments.length) {
-        $G__7300__i_args$jscomp$154$$ = 0;
-        for (var $G__7300__a$$ = Array(arguments.length - 0); $G__7300__i_args$jscomp$154$$ < $G__7300__a$$.length;) {
-          $G__7300__a$$[$G__7300__i_args$jscomp$154$$] = arguments[$G__7300__i_args$jscomp$154$$ + 0], ++$G__7300__i_args$jscomp$154$$;
+        $G__7333__i_args$jscomp$154$$ = 0;
+        for (var $G__7333__a$$ = Array(arguments.length - 0); $G__7333__i_args$jscomp$154$$ < $G__7333__a$$.length;) {
+          $G__7333__a$$[$G__7333__i_args$jscomp$154$$] = arguments[$G__7333__i_args$jscomp$154$$ + 0], ++$G__7333__i_args$jscomp$154$$;
         }
-        $G__7300__i_args$jscomp$154$$ = new $cljs$core$IndexedSeq$$($G__7300__a$$, 0, null);
+        $G__7333__i_args$jscomp$154$$ = new $cljs$core$IndexedSeq$$($G__7333__a$$, 0, null);
       }
-      return $G__7290__delegate$$.call(this, $G__7300__i_args$jscomp$154$$);
+      return $G__7321__delegate$$.call(this, $G__7333__i_args$jscomp$154$$);
     }
-    function $G__7290__delegate$$($args$jscomp$153_out$jscomp$12$$) {
-      var $vec__7086_vec__7089$$ = (new Date).toISOString().split("T"), $d$jscomp$199$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7086_vec__7089$$, 0, null);
-      $vec__7086_vec__7089$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7086_vec__7089$$, 1, null).split(".");
-      var $t__$1$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7086_vec__7089$$, 0, null);
-      $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7086_vec__7089$$, 1, null);
+    function $G__7321__delegate$$($args$jscomp$153_out$jscomp$12$$) {
+      var $vec__7091_vec__7094$$ = (new Date).toISOString().split("T"), $d$jscomp$199$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7091_vec__7094$$, 0, null);
+      $vec__7091_vec__7094$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7091_vec__7094$$, 1, null).split(".");
+      var $t__$1$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7091_vec__7094$$, 0, null);
+      $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($vec__7091_vec__7094$$, 1, null);
       $args$jscomp$153_out$jscomp$12$$ = [$cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($d$jscomp$199$$), " ", $cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($t__$1$$), " ", $cljs$core$str$$.$cljs$core$IFn$_invoke$arity$1$($cljs$core$apply$cljs$0core$0IFn$0_invoke$0arity$02$$($shadow$js$shim$module$0util$$.format, $cljs$core$clj__GT_js$$($args$jscomp$153_out$jscomp$12$$))), "\n"].join("");
       return $error_log$$.write($args$jscomp$153_out$jscomp$12$$);
     }
-    $G__7290$$.$cljs$lang$maxFixedArity$ = 0;
-    $G__7290$$.$cljs$lang$applyTo$ = function($arglist__7302_args$jscomp$155$$) {
-      $arglist__7302_args$jscomp$155$$ = $cljs$core$seq$$($arglist__7302_args$jscomp$155$$);
-      return $G__7290__delegate$$($arglist__7302_args$jscomp$155$$);
+    $G__7321$$.$cljs$lang$maxFixedArity$ = 0;
+    $G__7321$$.$cljs$lang$applyTo$ = function($arglist__7336_args$jscomp$155$$) {
+      $arglist__7336_args$jscomp$155$$ = $cljs$core$seq$$($arglist__7336_args$jscomp$155$$);
+      return $G__7321__delegate$$($arglist__7336_args$jscomp$155$$);
     };
-    $G__7290$$.$cljs$core$IFn$_invoke$arity$variadic$ = $G__7290__delegate$$;
-    return $G__7290$$;
+    $G__7321$$.$cljs$core$IFn$_invoke$arity$variadic$ = $G__7321__delegate$$;
+    return $G__7321$$;
   }();
   console.log = $log_fn_logs$$;
   console.error = $log_fn_logs$$;
   console._logstream = $error_log$$;
   return $log_fn_logs$$;
-})()("hello this is a test");
-console.log("TEST");
-setTimeout(function() {
-  return console.log("LATER");
-}, 1000);
+})();
 function $ghperks$server$replace_login_link$$($template$jscomp$1$$, $frag$$) {
-  var $obj__6013__auto___8920$$ = $template$jscomp$1$$.querySelector("#login-button");
-  $obj__6013__auto___8920$$.replaceWith.call($obj__6013__auto___8920$$, $frag$$);
+  var $obj__6013__auto___8921$$ = $template$jscomp$1$$.querySelector("#login-button");
+  $obj__6013__auto___8921$$.replaceWith.call($obj__6013__auto___8921$$, $frag$$);
   return $template$jscomp$1$$;
 }
 function $ghperks$server$logged_in_view$$($req$jscomp$5$$) {
   return new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$section_DOT_ui_DASH_section_DASH_hero$$, new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div_DOT_ui_DASH_layout_DASH_container$$, $cljs$core$truth_$$($req$jscomp$5$$.user) ? new $cljs$core$PersistentVector$$(null, 3, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div$$, new $cljs$core$PersistentVector$$(null, 
   4, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p_DOT_ui_DASH_text_DASH_intro$$, "Hello @", function() {
-    var $obj8850$$ = null != $req$jscomp$5$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$5$$) ? $req$jscomp$5$$.user : void 0;
-    if (null != $obj8850$$ && "username" in $obj8850$$) {
-      return $obj8850$$.username;
+    var $obj8847$$ = null != $req$jscomp$5$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$5$$) ? $req$jscomp$5$$.user : void 0;
+    if (null != $obj8847$$ && "username" in $obj8847$$) {
+      return $obj8847$$.username;
     }
   }(), "!"], null), function() {
-    var $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $req$jscomp$5$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$5$$) ? $req$jscomp$5$$.user : void 0;
-    $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && "emails" in $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$.emails : void 0;
-    $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && 0 in $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$[0] : void 0;
-    $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && "value" in $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$.value : void 0;
-    return $cljs$core$truth_$$($email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$) ? new $cljs$core$PersistentVector$$(null, 7, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div$$, new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "Thank you for signing up for the GH Perks beta."], null), new $cljs$core$PersistentVector$$(null, 4, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, 
-    "I'll send you an email at ", new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$strong$$, $email_obj8858$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$], null), " when I launch."], null), new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "See you soon."], null), new $cljs$core$PersistentVector$$(null, 1, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, 
+    var $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $req$jscomp$5$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($req$jscomp$5$$) ? $req$jscomp$5$$.user : void 0;
+    $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && "emails" in $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$.emails : void 0;
+    $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && 0 in $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$[0] : void 0;
+    $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ = null != $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ && "value" in $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$ ? $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$.value : void 0;
+    return $cljs$core$truth_$$($email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$) ? new $cljs$core$PersistentVector$$(null, 7, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div$$, new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "Thank you for signing up for the GH Perks beta."], null), new $cljs$core$PersistentVector$$(null, 4, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, 
+    "I'll send you an email at ", new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$strong$$, $email_obj8859$jscomp$inline_1577_obj8861$jscomp$inline_1576_obj8863$jscomp$inline_1575$$], null), " when I launch."], null), new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "See you soon."], null), new $cljs$core$PersistentVector$$(null, 1, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, 
     [$cljs$cst$keyword$br$$], null), new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "P.S. Sponsor me to support development \x26 lock in your place at launch:"], null), new $cljs$core$PersistentVector$$(null, 3, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div$$, new $cljs$core$PersistentArrayMap$$(null, 1, [$cljs$cst$keyword$class$$, "ui-component-cta ui-layout-flex"], null), new $cljs$core$PersistentVector$$(null, 
     3, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$a$$, new $cljs$core$PersistentArrayMap$$(null, 2, [$cljs$cst$keyword$href$$, "https://github.com/sponsors/chr15m/sponsorships?sponsor\x3dchr15m\x26tier_id\x3d96946", $cljs$cst$keyword$class$$, "ui-component-button ui-component-button-small ui-component-button-primary"], null), "Sponsor me on GitHub"], null)], null)], null) : new $cljs$core$PersistentVector$$(null, 6, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$div$$, 
     new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "You don't have an email address configured with GitHub."], null), new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "You'll have to check back in a couple of weeks."], null), new $cljs$core$PersistentVector$$(null, 4, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$p$$, "Or follow ", new $cljs$core$PersistentVector$$(null, 
@@ -11343,22 +11339,22 @@ function $ghperks$server$home_page$$($JSCompiler_inline_result$jscomp$1268_JSCom
   $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$ = null != $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$ && $applied_science$js_interop$impl$in_QMARK__STAR_$$($JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$) ? $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$.user : void 0;
   if ($cljs$core$truth_$$($JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$)) {
     $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$ = $JSCompiler_temp$jscomp$1528_res$jscomp$31$$.send;
-    var $G__8881$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$ = new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$span$$, "You're signed up."], null);
-    $G__8881$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$ = $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$ ? $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$($G__8881$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$) : $reagent$dom$server$render_to_static_markup$$.call(null, $G__8881$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$);
-    $JSCompiler_temp$jscomp$1528_res$jscomp$31$$ = $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$.call($JSCompiler_temp$jscomp$1528_res$jscomp$31$$, $ghperks$server$replace_login_link$$($template$jscomp$3$$, $G__8881$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$).toString());
+    var $G__8889$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$ = new $cljs$core$PersistentVector$$(null, 2, 5, $cljs$core$PersistentVector$EMPTY_NODE$$, [$cljs$cst$keyword$span$$, "You're signed up."], null);
+    $G__8889$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$ = $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$ ? $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$($G__8889$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$) : $reagent$dom$server$render_to_static_markup$$.call(null, $G__8889$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$);
+    $JSCompiler_temp$jscomp$1528_res$jscomp$31$$ = $JSCompiler_inline_result$jscomp$1268_JSCompiler_temp_const$jscomp$1529_req$jscomp$6$$.call($JSCompiler_temp$jscomp$1528_res$jscomp$31$$, $ghperks$server$replace_login_link$$($template$jscomp$3$$, $G__8889$jscomp$inline_1568_JSCompiler_inline_result$jscomp$1531$$).toString());
   } else {
     $JSCompiler_temp$jscomp$1528_res$jscomp$31$$ = $JSCompiler_temp$jscomp$1528_res$jscomp$31$$.send('\x3c!DOCTYPE html\x3e\n\x3chtml lang\x3d"en"\x3e\n  \x3chead\x3e\n    \x3c!-- META --\x3e\n    \x3cmeta charset\x3d"UTF-8"\x3e\n    \x3cmeta name\x3d"viewport" content\x3d"width\x3ddevice-width, initial-scale\x3d1"\x3e\n    \x3cmeta name\x3d"uisual" content\x3d"Made with Uisual (uisual.com)"\x3e\n    \x3cmeta name\x3d"author" content\x3d"Chris McCormick"\x3e\n    \x3cmeta name\x3d"description" content\x3d"Grow your GitHub sponsors by offering perks like access to private repos, files, and video tutorials."\x3e\n    \x3cmeta name\x3d"referrer" content\x3d"unsafe-url"\x3e\n    \x3cmeta name\x3d"robots" content\x3d"index, follow"\x3e\n    \x3c!-- SPEED --\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://res.cloudinary.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://res.cloudinary.com"\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://fonts.googleapis.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://fonts.googleapis.com"\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://fonts.gstatic.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://fonts.gstatic.com"\x3e\n    \x3c!-- LINK --\x3e\n    \x3clink rel\x3d"canonical" href\x3d"https://ghperks.com/"\x3e\n    \x3clink rel\x3d"icon" type\x3d"image/png" href\x3d"icon.png"\x3e\n    \x3c!-- PERFORMANCE --\x3e\n    \x3clink rel\x3d"stylesheet" href\x3d"https://fonts.googleapis.com/css2?family\x3dInter:wght@400;700\x26display\x3dswap"\x3e\n    \x3clink rel\x3d"preload" as\x3d"style" href\x3d"/style.css"\x3e\n    \x3clink rel\x3d"stylesheet" href\x3d"/style.css"\x3e\n    \x3c!-- TITLE --\x3e\n    \x3ctitle\x3eGrow your GitHub sponsors with GH Perks\x3c/title\x3e\n  \x3c/head\x3e\n  \x3cbody\x3e\n    \x3cheader role\x3d"banner" class\x3d"ui-section-header"\x3e\n      \x3cdiv class\x3d"ui-layout-container"\x3e\n        \x3cdiv class\x3d"ui-section-header__layout ui-layout-flex"\x3e\n          \x3c!-- LOGO --\x3e\n          \x3ca href\x3d"/" role\x3d"link" aria-label\x3d"GH Perks logo"\x3e\n            \x3cimg id\x3d"logo" src\x3d"/logo.svg"/\x3e\n            GH Perks\n          \x3c/a\x3e\n          \x3c!-- MENU --\x3e\n          \x3ca href\x3d"/auth/github" id\x3d"login-button" role\x3d"link" class\x3d"ui-component-button ui-component-button-small ui-component-button-primary"\x3eSign in with GitHub\x3c/a\x3e\n        \x3c/div\x3e\n      \x3c/div\x3e\n    \x3c/header\x3e\n    \x3cmain role\x3d"main"\x3e\n      \x3csection class\x3d"ui-section-hero"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3c!-- COPYWRITING --\x3e\n          \x3cdiv class\x3d"ui-layout-column-6 ui-layout-column-center"\x3e\n            \x3ch1\x3eGrow your GitHub sponsors.\x3c/h1\x3e\n            \x3cp class\x3d"ui-text-intro"\x3e\n              Say thanks to your sponsors by offering rewards like access to private repos, private video tutorials, PDFs, ZIPs, and other files.\n            \x3c/p\x3e\n            \x3c!-- CTA --\x3e\n            \x3cdiv class\x3d"ui-component-cta ui-layout-flex"\x3e\n              \x3ca href\x3d"/auth/github" role\x3d"link" class\x3d"ui-component-button ui-component-button-normal ui-component-button-primary"\x3eSign up for launch\x3c/a\x3e\n              \x3cp\x3e\x3csmall\x3eSign in with GitHub to get an email when GH Perks launches.\x3c/small\x3e\x3c/p\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n          \x3c!-- IMAGE --\x3e\n          \x3c!-- \x3cimg src\x3d"https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading\x3d"lazy" alt\x3d"#" class\x3d"ui-section-hero--image"\x3e --\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n      \x3csection class\x3d"ui-section-feature"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3cdiv class\x3d"ui-section-feature__layout ui-layout-grid ui-layout-grid-2"\x3e\n            \x3c!-- IMAGE --\x3e\n            \x3cimg src\x3d"mockup2.png" loading\x3d"lazy" alt\x3d"features mockup" class\x3d"ui-image-half-left"\x3e\n            \x3c!-- FEATURE --\x3e\n            \x3cdiv\x3e\n              \x3ch2\x3eFeatures\x3c/h2\x3e\n              \x3cp class\x3d"ui-text-intro"\x3e\n                With GH Perks you can give your GitHub sponsors a range of different goodies.\n                Here are some of the perks and features we\'re working on:\n              \x3c/p\x3e\n              \x3cul class\x3d"ui-component-list ui-component-list-feature ui-layout-grid"\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eAccess to private repos.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3ePrivate videos\x3cbr/\x3e(tutorials, updates).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eSecret links\x3cbr/\x3e(docs, Discord invites).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eDownload codes (Steam, app stores).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eZips, PDFs, and other files.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eA simple API to check your sponsors.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eDownload your sponsor list in CSV \x26amp; JSON.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eCustomizeable landing page.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eGH Perks is 100% open source itself.\x3c/li\x3e\n              \x3c/ul\x3e\n              \x3cp\x3ePlease \x3cstrong\x3e\x3ca href\x3d"mailto:chris@ghperks.com"\x3elet me know\x3c/a\x3e\x3c/strong\x3e if there is a particular feature you want.\x3c/p\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n      \x3csection class\x3d"ui-section-close"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3cdiv class\x3d"ui-layout-column-6 ui-layout-column-center"\x3e\n            \x3ch2\x3eGrow your sponsors.\x3c/h2\x3e\n            \x3cp class\x3d"ui-text-intro"\x3eSign in with GitHub to get an email when GH Perks launches.\x3c/p\x3e\n            \x3c!-- CTA --\x3e\n            \x3cdiv class\x3d"ui-component-cta ui-layout-flex"\x3e\n              \x3ca href\x3d"/auth/login" role\x3d"link" class\x3d"ui-component-button ui-component-button-normal ui-component-button-primary"\x3eSign in with GitHub\x3c/a\x3e\n              \x3c!-- \x3cp class\x3d"ui-text-note"\x3e\x3csmall\x3eFirefox and Safari soon.\x3c/small\x3e\x3c/p\x3e --\x3e\n              \x3cbr/\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n          \x3cbr/\x3e\n          \x3c!-- IMAGE --\x3e\n          \x3c!-- \x3cimg src\x3d"https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad-t.png" loading\x3d"lazy" alt\x3d"#" class\x3d"ui-section-hero--image"\x3e --\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n    \x3c/main\x3e\n    \x3cfooter role\x3d"contentinfo" class\x3d"ui-section-footer"\x3e\n      \x3cdiv class\x3d"ui-layout-container"\x3e\n        \x3cdiv class\x3d"ui-section-footer__layout ui-layout-flex"\x3e\n          \x3c!-- COPYRIGHT --\x3e\n          \x3cp class\x3d"ui-section-footer--copyright ui-text-note"\x3e\n            \x3csmall\x3e\x26copy; \x3ca href\x3d"https://mccormickit.com"\x3eMcCormick IT\x3c/a\x3e\x3c/small\x3e\n            \x3cbr/\x3e\n            \x3csmall\x3eDesign by \x3ca href\x3d"https://uisual.com"\x3eUisual\x3c/a\x3e\x3c/small\x3e\n          \x3c/p\x3e\n          \x3c!-- MENU --\x3e          \n          \x3cnav role\x3d"navigation" class\x3d"ui-section-footer--nav ui-section-footer--menu ui-layout-flex"\x3e\n            \x3ca href\x3d"/#features" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eFeatures\x3c/small\x3e\x3c/a\x3e\n            \x3ca href\x3d"mailto:chris@ghperks.com" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eContact\x3c/small\x3e\x3c/a\x3e\n            \x3c!-- \x3ca href\x3d"#" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eTerms\x3c/small\x3e\x3c/a\x3e --\x3e\n            \x3ca href\x3d"https://github.com/chr15m/ghperks.com" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eSource code\x3c/small\x3e\x3c/a\x3e\n          \x3c/nav\x3e\n          \x3c!-- SOCIAL --\x3e\n          \x3cnav role\x3d"navigation" class\x3d"ui-section-footer--nav ui-section-footer--social ui-layout-flex"\x3e\n            \x3ca href\x3d"https://github.com/chr15m/ghperks.com" role\x3d"link" aria-label\x3d"Github project"\x3e\n              \x3csvg viewBox\x3d"0 0 24 24" height\x3d"16" width\x3d"16" fill\x3d"none" stroke\x3d"#AEAEAE" stroke-linecap\x3d"round" stroke-linejoin\x3d"round" stroke-width\x3d"2" role\x3d"img" aria-label\x3d"GitHub Icon"\x3e\n                \x3cpath d\x3d"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/\x3e\n              \x3c/svg\x3e\n            \x3c/a\x3e\n            \x3ca href\x3d"https://twitter.com/mccrmx" role\x3d"link" aria-label\x3d"Author\'s twitter"\x3e\n              \x3csvg viewBox\x3d"0 0 24 24" height\x3d"16" width\x3d"16" fill\x3d"none" stroke\x3d"#AEAEAE" stroke-linecap\x3d"round" stroke-linejoin\x3d"round" stroke-width\x3d"2" role\x3d"img" aria-label\x3d"Twitter Icon"\x3e\n                \x3cpath d\x3d"M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/\x3e\n              \x3c/svg\x3e\n            \x3c/a\x3e\n          \x3c/nav\x3e\n        \x3c/div\x3e\n      \x3c/div\x3e\n    \x3c/footer\x3e\n  \x3c/body\x3e\n\x3c/html\x3e\n');
   }
   return $JSCompiler_temp$jscomp$1528_res$jscomp$31$$;
 }
-function $ghperks$server$auth_done_message$$($G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$, $res$jscomp$32$$) {
+function $ghperks$server$auth_done_message$$($G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$, $res$jscomp$32$$) {
   var $JSCompiler_temp_const$jscomp$192_template$jscomp$4$$ = $shadow$js$shim$module$0node_html_parser$$.parse('\x3c!DOCTYPE html\x3e\n\x3chtml lang\x3d"en"\x3e\n  \x3chead\x3e\n    \x3c!-- META --\x3e\n    \x3cmeta charset\x3d"UTF-8"\x3e\n    \x3cmeta name\x3d"viewport" content\x3d"width\x3ddevice-width, initial-scale\x3d1"\x3e\n    \x3cmeta name\x3d"uisual" content\x3d"Made with Uisual (uisual.com)"\x3e\n    \x3cmeta name\x3d"author" content\x3d"Chris McCormick"\x3e\n    \x3cmeta name\x3d"description" content\x3d"Grow your GitHub sponsors by offering perks like access to private repos, files, and video tutorials."\x3e\n    \x3cmeta name\x3d"referrer" content\x3d"unsafe-url"\x3e\n    \x3cmeta name\x3d"robots" content\x3d"index, follow"\x3e\n    \x3c!-- SPEED --\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://res.cloudinary.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://res.cloudinary.com"\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://fonts.googleapis.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://fonts.googleapis.com"\x3e\n    \x3clink rel\x3d"preconnect" href\x3d"https://fonts.gstatic.com"\x3e\n    \x3clink rel\x3d"dns-prefetch" href\x3d"https://fonts.gstatic.com"\x3e\n    \x3c!-- LINK --\x3e\n    \x3clink rel\x3d"canonical" href\x3d"https://ghperks.com/"\x3e\n    \x3clink rel\x3d"icon" type\x3d"image/png" href\x3d"icon.png"\x3e\n    \x3c!-- PERFORMANCE --\x3e\n    \x3clink rel\x3d"stylesheet" href\x3d"https://fonts.googleapis.com/css2?family\x3dInter:wght@400;700\x26display\x3dswap"\x3e\n    \x3clink rel\x3d"preload" as\x3d"style" href\x3d"/style.css"\x3e\n    \x3clink rel\x3d"stylesheet" href\x3d"/style.css"\x3e\n    \x3c!-- TITLE --\x3e\n    \x3ctitle\x3eGrow your GitHub sponsors with GH Perks\x3c/title\x3e\n  \x3c/head\x3e\n  \x3cbody\x3e\n    \x3cheader role\x3d"banner" class\x3d"ui-section-header"\x3e\n      \x3cdiv class\x3d"ui-layout-container"\x3e\n        \x3cdiv class\x3d"ui-section-header__layout ui-layout-flex"\x3e\n          \x3c!-- LOGO --\x3e\n          \x3ca href\x3d"/" role\x3d"link" aria-label\x3d"GH Perks logo"\x3e\n            \x3cimg id\x3d"logo" src\x3d"/logo.svg"/\x3e\n            GH Perks\n          \x3c/a\x3e\n          \x3c!-- MENU --\x3e\n          \x3ca href\x3d"/auth/github" id\x3d"login-button" role\x3d"link" class\x3d"ui-component-button ui-component-button-small ui-component-button-primary"\x3eSign in with GitHub\x3c/a\x3e\n        \x3c/div\x3e\n      \x3c/div\x3e\n    \x3c/header\x3e\n    \x3cmain role\x3d"main"\x3e\n      \x3csection class\x3d"ui-section-hero"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3c!-- COPYWRITING --\x3e\n          \x3cdiv class\x3d"ui-layout-column-6 ui-layout-column-center"\x3e\n            \x3ch1\x3eGrow your GitHub sponsors.\x3c/h1\x3e\n            \x3cp class\x3d"ui-text-intro"\x3e\n              Say thanks to your sponsors by offering rewards like access to private repos, private video tutorials, PDFs, ZIPs, and other files.\n            \x3c/p\x3e\n            \x3c!-- CTA --\x3e\n            \x3cdiv class\x3d"ui-component-cta ui-layout-flex"\x3e\n              \x3ca href\x3d"/auth/github" role\x3d"link" class\x3d"ui-component-button ui-component-button-normal ui-component-button-primary"\x3eSign up for launch\x3c/a\x3e\n              \x3cp\x3e\x3csmall\x3eSign in with GitHub to get an email when GH Perks launches.\x3c/small\x3e\x3c/p\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n          \x3c!-- IMAGE --\x3e\n          \x3c!-- \x3cimg src\x3d"https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading\x3d"lazy" alt\x3d"#" class\x3d"ui-section-hero--image"\x3e --\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n      \x3csection class\x3d"ui-section-feature"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3cdiv class\x3d"ui-section-feature__layout ui-layout-grid ui-layout-grid-2"\x3e\n            \x3c!-- IMAGE --\x3e\n            \x3cimg src\x3d"mockup2.png" loading\x3d"lazy" alt\x3d"features mockup" class\x3d"ui-image-half-left"\x3e\n            \x3c!-- FEATURE --\x3e\n            \x3cdiv\x3e\n              \x3ch2\x3eFeatures\x3c/h2\x3e\n              \x3cp class\x3d"ui-text-intro"\x3e\n                With GH Perks you can give your GitHub sponsors a range of different goodies.\n                Here are some of the perks and features we\'re working on:\n              \x3c/p\x3e\n              \x3cul class\x3d"ui-component-list ui-component-list-feature ui-layout-grid"\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eAccess to private repos.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3ePrivate videos\x3cbr/\x3e(tutorials, updates).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eSecret links\x3cbr/\x3e(docs, Discord invites).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eDownload codes (Steam, app stores).\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eZips, PDFs, and other files.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eA simple API to check your sponsors.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eDownload your sponsor list in CSV \x26amp; JSON.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eCustomizeable landing page.\x3c/li\x3e\n                \x3cli class\x3d"ui-component-list--item ui-component-list--item-check"\x3eGH Perks is 100% open source itself.\x3c/li\x3e\n              \x3c/ul\x3e\n              \x3cp\x3ePlease \x3cstrong\x3e\x3ca href\x3d"mailto:chris@ghperks.com"\x3elet me know\x3c/a\x3e\x3c/strong\x3e if there is a particular feature you want.\x3c/p\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n      \x3csection class\x3d"ui-section-close"\x3e\n        \x3cdiv class\x3d"ui-layout-container"\x3e\n          \x3cdiv class\x3d"ui-layout-column-6 ui-layout-column-center"\x3e\n            \x3ch2\x3eGrow your sponsors.\x3c/h2\x3e\n            \x3cp class\x3d"ui-text-intro"\x3eSign in with GitHub to get an email when GH Perks launches.\x3c/p\x3e\n            \x3c!-- CTA --\x3e\n            \x3cdiv class\x3d"ui-component-cta ui-layout-flex"\x3e\n              \x3ca href\x3d"/auth/login" role\x3d"link" class\x3d"ui-component-button ui-component-button-normal ui-component-button-primary"\x3eSign in with GitHub\x3c/a\x3e\n              \x3c!-- \x3cp class\x3d"ui-text-note"\x3e\x3csmall\x3eFirefox and Safari soon.\x3c/small\x3e\x3c/p\x3e --\x3e\n              \x3cbr/\x3e\n            \x3c/div\x3e\n          \x3c/div\x3e\n          \x3cbr/\x3e\n          \x3c!-- IMAGE --\x3e\n          \x3c!-- \x3cimg src\x3d"https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad-t.png" loading\x3d"lazy" alt\x3d"#" class\x3d"ui-section-hero--image"\x3e --\x3e\n        \x3c/div\x3e\n      \x3c/section\x3e\n    \x3c/main\x3e\n    \x3cfooter role\x3d"contentinfo" class\x3d"ui-section-footer"\x3e\n      \x3cdiv class\x3d"ui-layout-container"\x3e\n        \x3cdiv class\x3d"ui-section-footer__layout ui-layout-flex"\x3e\n          \x3c!-- COPYRIGHT --\x3e\n          \x3cp class\x3d"ui-section-footer--copyright ui-text-note"\x3e\n            \x3csmall\x3e\x26copy; \x3ca href\x3d"https://mccormickit.com"\x3eMcCormick IT\x3c/a\x3e\x3c/small\x3e\n            \x3cbr/\x3e\n            \x3csmall\x3eDesign by \x3ca href\x3d"https://uisual.com"\x3eUisual\x3c/a\x3e\x3c/small\x3e\n          \x3c/p\x3e\n          \x3c!-- MENU --\x3e          \n          \x3cnav role\x3d"navigation" class\x3d"ui-section-footer--nav ui-section-footer--menu ui-layout-flex"\x3e\n            \x3ca href\x3d"/#features" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eFeatures\x3c/small\x3e\x3c/a\x3e\n            \x3ca href\x3d"mailto:chris@ghperks.com" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eContact\x3c/small\x3e\x3c/a\x3e\n            \x3c!-- \x3ca href\x3d"#" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eTerms\x3c/small\x3e\x3c/a\x3e --\x3e\n            \x3ca href\x3d"https://github.com/chr15m/ghperks.com" role\x3d"link" class\x3d"ui-text-note"\x3e\x3csmall\x3eSource code\x3c/small\x3e\x3c/a\x3e\n          \x3c/nav\x3e\n          \x3c!-- SOCIAL --\x3e\n          \x3cnav role\x3d"navigation" class\x3d"ui-section-footer--nav ui-section-footer--social ui-layout-flex"\x3e\n            \x3ca href\x3d"https://github.com/chr15m/ghperks.com" role\x3d"link" aria-label\x3d"Github project"\x3e\n              \x3csvg viewBox\x3d"0 0 24 24" height\x3d"16" width\x3d"16" fill\x3d"none" stroke\x3d"#AEAEAE" stroke-linecap\x3d"round" stroke-linejoin\x3d"round" stroke-width\x3d"2" role\x3d"img" aria-label\x3d"GitHub Icon"\x3e\n                \x3cpath d\x3d"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/\x3e\n              \x3c/svg\x3e\n            \x3c/a\x3e\n            \x3ca href\x3d"https://twitter.com/mccrmx" role\x3d"link" aria-label\x3d"Author\'s twitter"\x3e\n              \x3csvg viewBox\x3d"0 0 24 24" height\x3d"16" width\x3d"16" fill\x3d"none" stroke\x3d"#AEAEAE" stroke-linecap\x3d"round" stroke-linejoin\x3d"round" stroke-width\x3d"2" role\x3d"img" aria-label\x3d"Twitter Icon"\x3e\n                \x3cpath d\x3d"M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/\x3e\n              \x3c/svg\x3e\n            \x3c/a\x3e\n          \x3c/nav\x3e\n        \x3c/div\x3e\n      \x3c/div\x3e\n    \x3c/footer\x3e\n  \x3c/body\x3e\n\x3c/html\x3e\n'), 
   $JSCompiler_temp_const$jscomp$193$$ = $res$jscomp$32$$.send;
   $JSCompiler_temp_const$jscomp$192_template$jscomp$4$$ = $ghperks$server$replace_login_link$$($JSCompiler_temp_const$jscomp$192_template$jscomp$4$$, "");
-  $G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$ = $ghperks$server$logged_in_view$$($G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
-  $G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$ = $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$ ? $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$($G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$) : $reagent$dom$server$render_to_static_markup$$.call(null, $G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
-  var $obj__6013__auto___8922$jscomp$inline_1519$$ = $JSCompiler_temp_const$jscomp$192_template$jscomp$4$$.querySelector("main");
-  $obj__6013__auto___8922$jscomp$inline_1519$$.set_content.call($obj__6013__auto___8922$jscomp$inline_1519$$, $G__8888$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
+  $G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$ = $ghperks$server$logged_in_view$$($G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
+  $G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$ = $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$ ? $reagent$dom$server$render_to_static_markup$cljs$0core$0IFn$0_invoke$0arity$01$$($G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$) : $reagent$dom$server$render_to_static_markup$$.call(null, $G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
+  var $obj__6013__auto___8923$jscomp$inline_1519$$ = $JSCompiler_temp_const$jscomp$192_template$jscomp$4$$.querySelector("main");
+  $obj__6013__auto___8923$jscomp$inline_1519$$.set_content.call($obj__6013__auto___8923$jscomp$inline_1519$$, $G__8901$jscomp$inline_1236_JSCompiler_inline_result$jscomp$195_req$jscomp$7$$);
   return $JSCompiler_temp_const$jscomp$193$$.call($res$jscomp$32$$, $JSCompiler_temp_const$jscomp$192_template$jscomp$4$$.toString());
 }
 function $ghperks$server$setup_routes$$($app$jscomp$7$$) {
@@ -11374,10 +11370,10 @@ function $ghperks$server$setup_routes$$($app$jscomp$7$$) {
 ;$cljs$core$apply$cljs$0core$0IFn$0_invoke$0arity$02$$(function() {
   return $promesa$protocols$_bind$$(null, function() {
     return $promesa$protocols$_bind$$($ghperks$auth$setup$$(), function($passport$jscomp$1$$) {
-      return $promesa$protocols$_bind$$($sitefox$web$start$$(), function($p__8896$$) {
-        var $app$jscomp$8$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8896$$, 0, null);
-        $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8896$$, 1, null);
-        $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8896$$, 2, null);
+      return $promesa$protocols$_bind$$($sitefox$web$start$$(), function($p__8913$$) {
+        var $app$jscomp$8$$ = $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8913$$, 0, null);
+        $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8913$$, 1, null);
+        $cljs$core$nth$cljs$0core$0IFn$0_invoke$0arity$03$$($p__8913$$, 2, null);
         return $promesa$protocols$_bind$$(null, function() {
           return $promesa$protocols$_bind$$($sitefox$util$reloader$$($cljs$core$partial$$.$cljs$core$IFn$_invoke$arity$3$(new $cljs$core$Var$$(function() {
             return $ghperks$server$setup_routes$$;
