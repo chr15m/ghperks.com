@@ -818,3 +818,9 @@ svg {
   height: 64px;
   margin-bottom: 0.25em;
 }
+
+.ui-section-feature__layout img {
+  border: 5px solid #CDCDCD;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #bbb;
+}
