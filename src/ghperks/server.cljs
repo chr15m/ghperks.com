@@ -5,9 +5,11 @@
     [reagent.dom.server :refer [render-to-static-markup]]
     [shadow.resource :as rc]
     [sitefox.web :as web]
-    [sitefox.util :refer [env reloader]]
+    [sitefox.util :refer [env reloader bind-console-log-to-file]]
     ["node-html-parser" :as html-parser]
     [ghperks.auth :as auth]))
+
+(bind-console-log-to-file)
 
 (def r render-to-static-markup)
 (def index-html (rc/inline "index.html"))
