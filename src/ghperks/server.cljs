@@ -12,9 +12,9 @@
 (def r render-to-static-markup)
 (def index-html (rc/inline "index.html"))
 
-(defn remove-login-link [template]
+(defn replace-login-link [template frag]
   (let [login-link (.querySelector template "#login-button")]
-    (j/call login-link :remove)
+    (j/call login-link :replaceWith frag)
     template))
 
 (defn replace-content [template replacement]
@@ -61,7 +61,7 @@
       (.send res
              (->
                template
-               (remove-login-link)
+               (replace-login-link (r [:span "You're signed up."]))
                .toString))
       (.send res index-html))))
 
@@ -70,7 +70,7 @@
         user (j/get req :user)]
     (.send res
            (-> template
-               (remove-login-link)
+               (replace-login-link "")
                (replace-content (r (logged-in-view req)))
                .toString))))
 
