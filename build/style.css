@@ -824,3 +824,12 @@ svg {
   border-radius: 10px;
   box-shadow: 0px 0px 10px #bbb;
 }
+
+.ui-section-close ol {
+  padding: 0px;
+}
+
+.ui-section-close ol li {
+  margin: 2em 0px;
+  font-size: var(--ui-typography-h4);
+}
