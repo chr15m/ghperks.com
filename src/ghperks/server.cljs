@@ -2,7 +2,7 @@
   (:require
     [promesa.core :as p]
     [applied-science.js-interop :as j]
-    [reagent.dom.server :refer [render-to-static-markup]]
+    [reagent.dom.server :refer [render-to-static-markup] :rename {render-to-static-markup r}]
     [shadow.resource :as rc]
     [sitefox.web :as web]
     [sitefox.util :refer [env]]
@@ -13,7 +13,6 @@
 
 (bind-console-log-to-file)
 
-(def r render-to-static-markup)
 (def index-html (rc/inline "index.html"))
 
 (defn replace-login-link [template frag]
